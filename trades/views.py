@@ -23,3 +23,12 @@ def open_trades(request):
         # requested information to the user when rendered.
         'open_trades': Trade.objects.filter(trade_status="OPEN")
     })
+
+def closed_trades(request):
+    return render(request, 'trades/closed_trades.html', {
+        # 'trades' variable holds all the data in the
+        # Trade model, this is the context that allows
+        # the all_trades.html template to display the
+        # requested information to the user when rendered.
+        'closed_trades': Trade.objects.filter(trade_status="CLOSED")
+    })
