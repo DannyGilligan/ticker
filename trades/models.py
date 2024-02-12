@@ -6,8 +6,8 @@ from datetime import date
 # Create your models here.
 
 POSITION_CHOICES = (('BUY','BUY'), ('SELL','SELL'))
-SATUS_CHOICES = (('OPEN','OPEN'), ('CLOSED','CLOSED'))
-RESULT_CHOICES = (('WIN','WIN'), ('LOSS','LOSS'))
+STATUS_CHOICES = (('OPEN','OPEN'), ('CLOSED','CLOSED'))
+# RESULT_CHOICES = (('WIN','WIN'), ('LOSS','LOSS'))
 BROKER_CHOICES = (('ETORO','ETORO'), ('ROBINHOOD','ROBINHOOD'), ('IG','IG'), ('DEGIRO','DEGIRO'), ('INTERACTIVE BROKERS','INTERACTIVE BROKERS'), ('PLUS500','PLUS500'))
 
 
@@ -19,7 +19,7 @@ class Trade(models.Model):
     )
 
     ticker = models.CharField(max_length=5)
-    date_opened = models.DateField(_("Date"), default=date.today)
+    date_opened = models.DateField()
     trade_amount = MoneyField(max_digits=10, decimal_places=2, default_currency='USD')
     opening_price = MoneyField(max_digits=10, decimal_places=2, default_currency='USD')
     position = models.CharField(
@@ -35,7 +35,7 @@ class Trade(models.Model):
     )
 
     closing_price = MoneyField(max_digits=10, decimal_places=2, default_currency='USD', blank=True)
-    date_closed = models.DateField(_("Date"), default=date.today)
+    date_closed = models.DateField()
 
     # result = models.CharField(
     #     max_length = 4,
@@ -74,7 +74,7 @@ class Trade(models.Model):
             return "NO CHANGE"
         else:
             return "LOSS"
-            
+
     class Meta:
         ordering = ["-date_opened"]
 
