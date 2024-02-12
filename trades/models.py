@@ -7,6 +7,7 @@ from datetime import date
 
 POSITION_CHOICES = (('BUY','BUY'), ('SELL','SELL'))
 STATUS_CHOICES = (('OPEN','OPEN'), ('CLOSED','CLOSED'))
+STOCK_CHOICES = (('TSLA','TSLA'),('UBER','UBER'),('AAPL','AAPL'),('AMZN','AMZN'),('AMD','AMD'),('RIOT','RIOT'),('NVDA','NVDA'),('NFLX','NFLX'),('SNAP','SNAP'),('META','META'))
 # RESULT_CHOICES = (('WIN','WIN'), ('LOSS','LOSS'))
 BROKER_CHOICES = (('ETORO','ETORO'), ('ROBINHOOD','ROBINHOOD'), ('IG','IG'), ('DEGIRO','DEGIRO'), ('INTERACTIVE BROKERS','INTERACTIVE BROKERS'), ('PLUS500','PLUS500'))
 
@@ -18,7 +19,11 @@ class Trade(models.Model):
         User, on_delete=models.CASCADE, related_name="ticker_trade"
     )
 
-    ticker = models.CharField(max_length=5)
+    ticker = models.CharField(
+        max_length=5,
+        choices = STOCK_CHOICES
+    )
+    
     date_opened = models.DateField()
     trade_amount = MoneyField(max_digits=10, decimal_places=2, default_currency='USD')
     opening_price = MoneyField(max_digits=10, decimal_places=2, default_currency='USD')
