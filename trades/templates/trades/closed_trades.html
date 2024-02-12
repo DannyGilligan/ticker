@@ -5,12 +5,12 @@
     <h3 class="m-5 text-center fw-bold text-body">Open Trades</h3>
     <div class="row">
         <div class="col-12">
-            <!-- The 'open_trades' variable below is passed in from 
-            the 'open_trades' view in the views.py file, the If
+            <!-- The 'closed_trades' variable below is passed in from 
+            the 'closed_trades' view in the views.py file, the If
             function below first check if there are values in that variable -->
             {% if open_trades %}
             <table class="table table-hover table-responsive">
-                <caption>Showing records of all open trades in your Ticker account</caption>
+                <caption>Showing records of all closed trades in your Ticker account</caption>
                 <thead>
                     <tr>
                         <th scope="col">Opened</th>
@@ -21,7 +21,7 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <!-- If there are values inside the 'trades' variable, the For loop below will
+                    <!-- If there are values inside the 'closed_trades' variable, the For loop below will
                     then iterate over those values, and return the values associated with the Django variables
                     injected into the html table cells below -->
                     {% for trade in open_trades %}
@@ -35,9 +35,9 @@
                     {% endfor %}
                 </tbody>
             </table>
-            <!-- if no records are present in the 'trades' variable, the message below will be displayed to the user-->
+            <!-- if no records are present in the 'closed_trades' variable, the message below will be displayed to the user-->
             {% else %}
-            <p class="text-center fw-bold">There are currently no Open trades in your Ticker account, click on 'Add
+            <p class="text-center fw-bold">There are currently no Closed trades in your Ticker account, click on 'Add
                 Trade' to add a trade.</p>
             <!-- The original If statement is then ended below -->
             {% endif %}

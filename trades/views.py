@@ -32,3 +32,4 @@ def closed_trades(request):
         # requested information to the user when rendered.
         'closed_trades': Trade.objects.filter(trade_status="CLOSED")
     })
+
