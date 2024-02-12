@@ -66,7 +66,7 @@
                 <!-- 'trades' variable below is passed in from 'all_trades' view -->
                 {% if trades %}
                 <table class="table table-hover table-responsive">
-                    <caption>Records of all open and closed trades</caption>
+                    <caption>Showing records of all open and closed trades in your Ticker account</caption>
                     <thead>
                       <tr>
                         <th scope="col">Opened</th>
@@ -83,7 +83,7 @@
                         <td>{{ trade.ticker }}</td>
                         <td>{{ trade.position }}</td>
                         <td>{{ trade.trade_amount }}</td>
-                        
+                        <td>Buttons go here</td>
                       </tr>
 
                       {% endfor %}
@@ -94,7 +94,7 @@
 
 
                 {% else %}
-                <p class="text-center fw-bold">No trades have been added yet, click on 'Add Trade' to add a trade.</p>
+                <p class="text-center fw-bold">No trades have been added to your Ticker account yet, click on 'Add Trade' to add a trade.</p>
 
                 {% endif %}
             </div>
