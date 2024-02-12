@@ -11,8 +11,6 @@ STOCK_CHOICES = (('TSLA','TSLA'),('UBER','UBER'),('AAPL','AAPL'),('AMZN','AMZN')
 # RESULT_CHOICES = (('WIN','WIN'), ('LOSS','LOSS'))
 BROKER_CHOICES = (('ETORO','ETORO'), ('ROBINHOOD','ROBINHOOD'), ('IG','IG'), ('DEGIRO','DEGIRO'), ('INTERACTIVE BROKERS','INTERACTIVE BROKERS'), ('PLUS500','PLUS500'))
 
-
-
 class Trade(models.Model):
 
     trader = models.ForeignKey(
@@ -25,8 +23,11 @@ class Trade(models.Model):
     )
 
     date_opened = models.DateField()
+    
     trade_amount = MoneyField(max_digits=10, decimal_places=2, default_currency='USD')
+    
     opening_price = MoneyField(max_digits=10, decimal_places=2, default_currency='USD')
+    
     position = models.CharField(
         max_length = 4,
         choices = POSITION_CHOICES,
@@ -47,15 +48,6 @@ class Trade(models.Model):
     closing_price = MoneyField(max_digits=10, decimal_places=2, default_currency='USD', blank=True, null=True)
 
     date_closed = models.DateField(blank=True, null=True)
-
-    # result = models.CharField(
-    #     max_length = 4,
-    #     choices = RESULT_CHOICES,
-    #     default = 'WIN',
-    #     blank=True
-    # )
-
-
 
     @property
     def trade_duration(self):
