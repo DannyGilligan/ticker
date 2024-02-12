@@ -2,12 +2,12 @@
 
 {% block body %}
 <div class="container-fluid">
-    <h3 class="m-5 text-center fw-bold text-body">All Trades</h3>
+    <h3 class="m-5 text-center fw-bold text-body">Open Trades</h3>
     <div class="row">
         <div class="col-12">
             <!-- The 'trades' variable below is passed in from 'all_trades' views.py file, the If function below
             first check if there are values in that variable -->
-            {% if trades.trade_status = "OPEN" %}
+            {% if trades.trade_status == "OPEN" %}
             <table class="table table-hover table-responsive">
                 <caption>Showing records of all open and closed trades in your Ticker account</caption>
                 <thead>
