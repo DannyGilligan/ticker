@@ -39,9 +39,9 @@ class Trade(models.Model):
         default = 'OPEN'
     )
 
-    closing_price = MoneyField(max_digits=10, decimal_places=2, default_currency='USD', blank=True)
-    
-    date_closed = models.DateField(blank=True)
+    closing_price = MoneyField(max_digits=10, decimal_places=2, default_currency='USD', blank=True, null=True)
+
+    date_closed = models.DateField(blank=True, null=True)
 
     # result = models.CharField(
     #     max_length = 4,
@@ -54,7 +54,8 @@ class Trade(models.Model):
         max_length = 20,
         choices = BROKER_CHOICES,
         default = 'ETORO',
-        blank=True
+        blank=True,
+        null=True
     )
 
     @property
