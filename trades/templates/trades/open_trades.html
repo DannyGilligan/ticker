@@ -7,7 +7,7 @@
         <div class="col-12">
             <!-- The 'trades' variable below is passed in from 'all_trades' views.py file, the If function below
             first check if there are values in that variable -->
-            {% if trades.trade_status == OPEN %}
+            {% if open_trades %}
             <table class="table table-hover table-responsive">
                 <caption>Showing records of all open trades in your Ticker account</caption>
                 <thead>
@@ -23,7 +23,7 @@
                     <!-- If there are values inside the 'trades' variable, the For loop below will
                     then iterate over those values, and return the values associated with the Django variables
                     injected into the html table cells below -->
-                    {% for trade in trades %}
+                    {% for trade in open_trades %}
                     <tr>
                         <td>{{ trade.date_opened }}</td>
                         <td>{{ trade.ticker }}</td>
@@ -36,7 +36,7 @@
             </table>
             <!-- if no records are present in the 'trades' variable, the message below will be displayed to the user-->
             {% else %}
-            <p class="text-center fw-bold">There are no Open trades in your Ticker, click on 'Add
+            <p class="text-center fw-bold">No trades have been added to your Ticker account yet, click on 'Add
                 Trade' to add a trade.</p>
             <!-- The original If statement is then ended below -->
             {% endif %}

@@ -21,5 +21,5 @@ def open_trades(request):
         # Trade model, this is the context that allows
         # the all_trades.html template to display the
         # requested information to the user when rendered.
-        'trades': Trade.objects.all()
+        'open_trades': Trade.objects.filter(trade_status="OPEN")
     })
