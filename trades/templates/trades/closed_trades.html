@@ -2,13 +2,13 @@
 
 {% block body %}
 <div class="container-fluid">
-    <h3 class="m-5 text-center fw-bold text-body">Open Trades</h3>
+    <h3 class="m-5 text-center fw-bold text-body">Closed Trades</h3>
     <div class="row">
         <div class="col-12">
             <!-- The 'closed_trades' variable below is passed in from 
             the 'closed_trades' view in the views.py file, the If
             function below first check if there are values in that variable -->
-            {% if open_trades %}
+            {% if closed_trades %}
             <table class="table table-hover table-responsive">
                 <caption>Showing records of all closed trades in your Ticker account</caption>
                 <thead>
@@ -24,7 +24,7 @@
                     <!-- If there are values inside the 'closed_trades' variable, the For loop below will
                     then iterate over those values, and return the values associated with the Django variables
                     injected into the html table cells below -->
-                    {% for trade in open_trades %}
+                    {% for trade in closed_trades %}
                     <tr>
                         <td>{{ trade.date_opened }}</td>
                         <td>{{ trade.ticker }}</td>
