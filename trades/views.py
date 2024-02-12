@@ -14,3 +14,12 @@ def all_trades(request):
         # requested information to the user when rendered.
         'trades': Trade.objects.all()
     })
+
+def open_trades(request):
+    return render(request, 'trades/open_trades.html', {
+        # 'trades' variable holds all the data in the
+        # Trade model, this is the context that allows
+        # the all_trades.html template to display the
+        # requested information to the user when rendered.
+        'trades': Trade.objects.all()
+    })

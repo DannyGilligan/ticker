@@ -1,2 +1,46 @@
 {% extends "trades/base.html" %}
 
+{% block body %}
+<div class="container-fluid">
+    <h3 class="m-5 text-center fw-bold text-body">All Trades</h3>
+    <div class="row">
+        <div class="col-12">
+            <!-- The 'trades' variable below is passed in from 'all_trades' views.py file, the If function below
+            first check if there are values in that variable -->
+            {% if trades.trade_status = "OPEN" %}
+            <table class="table table-hover table-responsive">
+                <caption>Showing records of all open and closed trades in your Ticker account</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Opened</th>
+                        <th scope="col">Ticker</th>
+                        <th scope="col">Position</th>
+                        <th scope="col">Amount</th>
+                        <th scope="col">Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- If there are values inside the 'trades' variable, the For loop below will
+                    then iterate over those values, and return the values associated with the Django variables
+                    injected into the html table cells below -->
+                    {% for trade in trades %}
+                    <tr>
+                        <td>{{ trade.date_opened }}</td>
+                        <td>{{ trade.ticker }}</td>
+                        <td>{{ trade.position }}</td>
+                        <td>{{ trade.trade_amount }}</td>
+                        <td>Buttons go here</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+            <!-- if no records are present in the 'trades' variable, the message below will be displayed to the user-->
+            {% else %}
+            <p class="text-center fw-bold">There are no Open trades in your Ticker, click on 'Add
+                Trade' to add a trade.</p>
+            <!-- The original If statement is then ended below -->
+            {% endif %}
+        </div>
+    </div>
+</div>
+{% endblock %}
