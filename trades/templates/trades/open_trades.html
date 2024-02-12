@@ -7,7 +7,7 @@
         <div class="col-12">
             <!-- The 'trades' variable below is passed in from 'all_trades' views.py file, the If function below
             first check if there are values in that variable -->
-            {% if trades.trade_status == "OPEN" %}
+            {% if trades.trade_status == OPEN %}
             <table class="table table-hover table-responsive">
                 <caption>Showing records of all open and closed trades in your Ticker account</caption>
                 <thead>
