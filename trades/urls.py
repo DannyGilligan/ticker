@@ -13,4 +13,5 @@ urlpatterns = [
     path('', views.index, name='index'),
     path('all_trades/', views.all_trades, name='all_trades'),
     path('open_trades/', views.open_trades, name='open_trades'),
+    path('closed_trades/', views.closed_trades, name='closed_trades'),
 ]
