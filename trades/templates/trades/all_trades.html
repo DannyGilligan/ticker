@@ -7,8 +7,12 @@
     <title>Ticker</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
@@ -33,11 +37,13 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0 mt-3">
                     <li class="nav-item mx-2">
-                        <a class="nav-link font-weight-bold fw-bold text-wrap" style="color: black;" aria-current="page" href="#">Home</a>
+                        <a class="nav-link font-weight-bold fw-bold text-wrap" style="color: black;" aria-current="page"
+                            href="#">Home</a>
                     </li>
 
                     <li class="nav-item mx-2">
-                        <a class="nav-link fw-bold text-wrap" style="color: green;" href="#"><i class="fa-solid fa-plus"></i> Add Trade</a>
+                        <a class="nav-link fw-bold text-wrap" style="color: green;" href="#"><i
+                                class="fa-solid fa-plus"></i> Add Trade</a>
                     </li>
 
                     <li class="nav-item mx-2">
@@ -63,39 +69,40 @@
         <h3 class="m-5 text-center fw-bold text-body">All Trades</h3>
         <div class="row">
             <div class="col-12">
-                <!-- 'trades' variable below is passed in from 'all_trades' view -->
+                <!-- The 'trades' variable below is passed in from 'all_trades' views.py file, the If function below
+                first check if there are values in that variable -->
                 {% if trades %}
                 <table class="table table-hover table-responsive">
                     <caption>Showing records of all open and closed trades in your Ticker account</caption>
                     <thead>
-                      <tr>
-                        <th scope="col">Opened</th>
-                        <th scope="col">Ticker</th>
-                        <th scope="col">Position</th>
-                        <th scope="col">Amount</th>
-                        <th scope="col">Actions</th>
-                      </tr>
+                        <tr>
+                            <th scope="col">Opened</th>
+                            <th scope="col">Ticker</th>
+                            <th scope="col">Position</th>
+                            <th scope="col">Amount</th>
+                            <th scope="col">Actions</th>
+                        </tr>
                     </thead>
                     <tbody>
-                      {% for trade in trades %}
-                      <tr>
-                        <td>{{ trade.date_opened }}</td>
-                        <td>{{ trade.ticker }}</td>
-                        <td>{{ trade.position }}</td>
-                        <td>{{ trade.trade_amount }}</td>
-                        <td>Buttons go here</td>
-                      </tr>
-
-                      {% endfor %}
+                        <!-- If there are values inside the 'trades' variable, the For loop below will
+                        then iterate over those values, and return the values associated with the Django variables
+                        injected into the html table cells below -->
+                        {% for trade in trades %}
+                        <tr>
+                            <td>{{ trade.date_opened }}</td>
+                            <td>{{ trade.ticker }}</td>
+                            <td>{{ trade.position }}</td>
+                            <td>{{ trade.trade_amount }}</td>
+                            <td>Buttons go here</td>
+                        </tr>
+                        {% endfor %}
                     </tbody>
-                  </table>
-
-
-
-
+                </table>
+                <!-- if no records are present in the 'trades' variable, the message below will be displayed to the user-->
                 {% else %}
-                <p class="text-center fw-bold">No trades have been added to your Ticker account yet, click on 'Add Trade' to add a trade.</p>
-
+                <p class="text-center fw-bold">No trades have been added to your Ticker account yet, click on 'Add
+                    Trade' to add a trade.</p>
+                <!-- The original If statement is then ended below -->
                 {% endif %}
             </div>
         </div>
