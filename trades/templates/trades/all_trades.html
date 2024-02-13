@@ -14,11 +14,11 @@
                 <caption>Showing records of all Open and Closed trades in your Ticker account</caption>
                 <thead>
                     <tr>
-                        <th scope="col">Opened</th>
-                        <th scope="col">Ticker</th>
-                        <th scope="col" class="d-none d-sm-block">Position</th>
-                        <th scope="col">Amount</th>
-                        <th scope="col">Actions</th>
+                        <th scope="col" class=".d-block">Opened</th>
+                        <th scope="col" class=".d-block">Ticker</th>
+                        <th scope="col" class="hide-on-mobile">Position</th>
+                        <th scope="col" class=".d-block">Amount</th>
+                        <th scope="col" class=".d-block">Actions</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -27,10 +27,10 @@
                         injected into the html table cells below -->
                     {% for trade in trades %}
                     <tr>
-                        <td>{{ trade.date_opened }}</td>
-                        <td>{{ trade.ticker }}</td>
-                        <td class="d-none d-sm-block">{{ trade.position }}</td>
-                        <td>{{ trade.trade_amount }}</td>
+                        <td class=".d-block">{{ trade.date_opened }}</td>
+                        <td class=".d-block">{{ trade.ticker }}</td>
+                        <td class="hide-on-mobile">{{ trade.position }}</td>
+                        <td class=".d-block">{{ trade.trade_amount }}</td>
                         <td>
                             <button type="button" class="btn btn-outline-dark btn-sm me-1"
                                 href="{% url 'view_trade' trade.id %}" data-bs-toggle="modal"
@@ -62,7 +62,6 @@
                                                 <li class="list-group-item"><strong>Trade Duration: </strong>{{ trade.trade_duration }}</li>
                                                 <li class="list-group-item"><strong>Realised Profit/Loss: </strong>{{ trade.realised_pl }}</li>
                                                 <li class="list-group-item"><strong>Result: </strong>{{ trade.result }}</li>
-                                                
                                             </ul>
                                         </div>
                                         <div class="modal-footer">
