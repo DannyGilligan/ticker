@@ -15,7 +15,7 @@
                     <tr>
                         <th scope="col">Opened</th>
                         <th scope="col">Ticker</th>
-                        <th scope="col" class="d-none d-sm-block">Position</th>
+                        <th scope="col" class="hide-on-mobile">Position</th>
                         <th scope="col">Amount</th>
                         <th scope="col">Actions</th>
                     </tr>
@@ -28,7 +28,7 @@
                     <tr>
                         <td>{{ trade.date_opened }}</td>
                         <td>{{ trade.ticker }}</td>
-                        <td class="d-none d-sm-block">{{ trade.position }}</td>
+                        <td class="hide-on-mobile">{{ trade.position }}</td>
                         <td>{{ trade.trade_amount }}</td>
                         <td>
                             <button type="button" class="btn btn-outline-dark btn-sm me-1"
