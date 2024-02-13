@@ -51,8 +51,11 @@ class Trade(models.Model):
 
     @property
     def trade_duration(self):
-        trade_duration = self.date_closed.date() - self.date_opened.date()
-        return trade_duration
+        if date_closed = "None":
+            return "PENDING"
+        else:
+            trade_duration = self.date_closed.date() - self.date_opened.date()
+            return trade_duration
 
     @property
     def units_transacted(self):
