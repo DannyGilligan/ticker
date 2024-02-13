@@ -60,7 +60,7 @@ class Trade(models.Model):
     @property
     def units_transacted(self):
         units_transacted = self.trade_amount / self.opening_price
-        return units_transacted
+        return round(units_transacted, 2)
 
     @property
     def realised_pl(self):
