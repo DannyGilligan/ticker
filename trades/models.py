@@ -64,8 +64,11 @@ class Trade(models.Model):
 
     @property
     def realised_pl(self):
-        realised_pl = (self.units_transacted * self.closing_price) - self.trade_amount
-        return realised_pl
+        if self.closing_price == None:
+            return "PENDING"
+        else:
+            realised_pl = (self.units_transacted * self.closing_price) - self.trade_amount
+            return realised_pl
 
     @property
     def result(self):
