@@ -67,14 +67,16 @@ class Trade(models.Model):
         if self.closing_price == None:
             return "PENDING"
         else:
-            realised_pl = (self.units_transacted * self.closing_price) - self.trade_amount
+            realised_pl = (int(self.units_transacted) * int(self.closing_price)) - int(self.trade_amount)
             return realised_pl
 
     @property
     def result(self):
-        if self.realised_pl > 0:
+        if str(self.realised_pl) == "PENDING":
+            return "PENDING"
+        elif int(self.realised_pl) > 0:
             return "WIN"
-        elif self.realised_pl == 0:
+        elif int(self.realised_pl) == 0:
             return "NO CHANGE"
         else:
             return "LOSS"
