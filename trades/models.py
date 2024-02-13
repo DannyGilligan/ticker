@@ -54,7 +54,7 @@ class Trade(models.Model):
         if self.date_closed == None:
             return "PENDING"
         else:
-            trade_duration = self.date_closed.date() - self.date_opened.date()
+            trade_duration = self.date_closed - self.date_opened
             return trade_duration
 
     @property
@@ -67,16 +67,18 @@ class Trade(models.Model):
         if self.closing_price == None:
             return "PENDING"
         else:
-            realised_pl = (int(self.units_transacted) * int(self.closing_price)) - int(self.trade_amount)
+            realised_pl = (self.units_transacted * self.closing_price) - self.trade_amount
             return realised_pl
 
     @property
     def result(self):
-        if str(self.realised_pl) == "PENDING":
+        realised_pl_string = str(self.realised_pl)
+        zero_amount_string = str(0.00)
+        if realised_pl_string == "PENDING":
             return "PENDING"
-        elif int(self.realised_pl) > 0:
+        elif realised_pl_string > zero_amount_string:
             return "WIN"
-        elif int(self.realised_pl) == 0:
+        elif realised_pl_string == zero_amount_string:
             return "NO CHANGE"
         else:
             return "LOSS"
