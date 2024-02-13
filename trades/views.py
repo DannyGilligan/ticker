@@ -4,7 +4,7 @@ from django.http import HttpResponse
 from django.urls import reverse
 from django.shortcuts import get_object_or_404
 from .models import Trade
-# from .forms import TradeDetailsForm
+from .forms import TradeDetailsForm
 
 # Create your views here.
 def index(request):
@@ -54,6 +54,11 @@ def view_trade(request, id):
     trade = Trade.objects.get(pk=id)
     return HttpeResponseDirect(reverse('index'))
 
+
+# The add_trade_details code below was adapted from a Django crash 
+# course tutorial published by YouTube channel 'Bob's Programming Academy"
+# link: https://youtu.be/EUMpUUXKvP0?si=BM8WFT2mUgI9I0sI
+
 def add_trade_details(request):
     if request.method == 'POST':
       form = TradeDetailsForm(request.POST)  
@@ -89,6 +94,6 @@ def add_trade_details(request):
         })
     else:
         form = TradeDetailsForm()
-    return render(request, 'trades/add_trade.html',{
+    return render(request, 'trades/add_trade.html', {
         'form': TradeDetailsForm()
     })

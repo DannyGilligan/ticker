@@ -15,4 +15,5 @@ urlpatterns = [
     path('open_trades/', views.open_trades, name='open_trades'),
     path('closed_trades/', views.closed_trades, name='closed_trades'),
     path('<int:id>', views.view_trade, name='view_trade'),
+    path('add_trade/', views.add_trade_details, name='add_trade'),
 ]

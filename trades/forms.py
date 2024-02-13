@@ -19,31 +19,27 @@ class TradeDetailsForm(forms.ModelForm):
             'position': 'Position',
             'trade_status': 'Trade status',
             'broker': 'Broker',
-            'closing_price': 'Closing price',
-            'date_closed': 'Date closed',
+            'closing_price': 'Closing price (add data when closing trade)',
+            'date_closed': 'Date closed (add enter data when closing trade)',
         }
         widgets = {
             'trader': forms.TextInput(attrs={'class': 'form-control'}),
 
-            'ticker': forms.CharField(
-                widget=forms.Select(choices=STOCK_CHOICES)),
+            'ticker': forms.Select(choices=STOCK_CHOICES),
 
             'date_opened': forms.DateField,
 
-            'trade_amount': forms.TextInput,
+            'trade_amount': forms.NumberInput(attrs={'class': 'form-control'}),
 
-            'opening_price': forms.NumberInput,
+            'opening_price': forms.NumberInput(attrs={'class': 'form-control'}),
 
-            'position': forms.CharField(
-                widget=forms.Select(choices=POSITION_CHOICES)),
+            'position': forms.Select(choices=POSITION_CHOICES),
 
-            'trade_status': forms.CharField(
-                widget=forms.Select(choices=STATUS_CHOICES)),
+            'trade_status': forms.Select(choices=STATUS_CHOICES),
 
-            'broker': forms.CharField(
-                widget=forms.Select(choices=BROKER_CHOICES)),
+            'broker': forms.Select(choices=BROKER_CHOICES),
 
-            'closing_price': forms.NumberInput,
+            'closing_price': forms.NumberInput(attrs={'class': 'form-control'}),
 
-            'date_closed': forms.DateField,
+            'date_closed': forms.DateField
         }
