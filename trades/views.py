@@ -1,5 +1,7 @@
+from django.http import HttpResponseRedirect
 from django.shortcuts import render, get_object_or_404
 from django.http import HttpResponse
+from django.urls import reverse
 from django.shortcuts import get_object_or_404
 from .models import Trade
 
@@ -34,3 +36,6 @@ def closed_trades(request):
         'closed_trades': Trade.objects.filter(trade_status="CLOSED")
     })
 
+def view_trade(request, id):
+    trade = Trade.objects.get(pk=id)
+    return HttpeResponseDirect(reverse('index'))
