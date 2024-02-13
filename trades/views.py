@@ -51,3 +51,41 @@ def view_trade(request, id):
     trade = Trade.objects.get(pk=id)
     return HttpeResponseDirect(reverse('index'))
 
+def add_trade_details(request):
+    if request.method == 'POST':
+      add_trade_form = TradeDetailsForm(request.POST)  
+      if add_trade_form.is_valid():
+        new_trader = add_trade_form.cleaned_data['trader']
+        new_ticker = add_trade_form.cleaned_data['ticker']
+        new_date_opened = add_trade_form.cleaned_data['date_opened']
+        new_trade_amount = add_trade_form.cleaned_data['trade_amount']
+        new_opening_price = add_trade_form.cleaned_data['opening_price']
+        new_position = add_trade_form.cleaned_data['position']
+        new_trade_status = add_trade_form.cleaned_data['trade_status']
+        new_broker = add_trade_form.cleaned_data['broker']
+        new_closing_price = add_trade_form.cleaned_data['closing_price']
+        new_date_closed = add_trade_form.cleaned_data['date_closed']
+
+        new_trade = Trade(
+            trader = new_trader,
+            ticker = new_ticker,
+            date_opened = new_date_opened,
+            trade_amount = new_trade_amount,
+            opening_price = new_opening_price,
+            position = new_position,
+            trade_status = new_trade_status,
+            broker = new_broker,
+            closing_price = new_closing_price,
+            new_date_closed = date_closed
+        )
+
+        new_trade.save()
+        return render(request, 'trades/add_trade.html', {
+            'add_trade_form': TradeDetailsForm(),
+            'success': True
+        })
+    else:
+        add_trade_form = TradeDetailsForm()
+    return render(request, 'trades/add_trade.html',{
+        'add_trade_form': TradeDetailsForm()
+    })
