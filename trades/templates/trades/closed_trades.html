@@ -35,7 +35,9 @@
                                 href="{% url 'view_trade' trade.id %}" data-bs-toggle="modal"
                                 data-bs-target="#selectedTrade{{ trade.id }}">View</button>
 
-                            <!-- Modal -->
+                            <!-- The modal below will be displayed when the user clicks on the 'View'
+                            button, it contains additional relevant details related to the trade, including
+                            values calculated by the custom functions included in models.py -->
                             <div class="modal fade" id="selectedTrade{{ trade.id }}" tabindex="-1" role="dialog"
                                 aria-labelledby="selectedTrade{{ trade.id }}" aria-hidden="true">
                                 <div class="modal-dialog" role="document">
