@@ -30,7 +30,61 @@
                         <td>{{ trade.ticker }}</td>
                         <td class="d-none d-sm-block">{{ trade.position }}</td>
                         <td>{{ trade.trade_amount }}</td>
-                        <td>Buttons go here</td>
+                        <td>
+                            <button type="button" class="btn btn-outline-dark btn-sm me-1"
+                                href="{% url 'view_trade' trade.id %}" data-bs-toggle="modal"
+                                data-bs-target="#selectedTrade{{ trade.id }}">View</button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="selectedTrade{{ trade.id }}" tabindex="-1" role="dialog"
+                                aria-labelledby="selectedTrade{{ trade.id }}" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title fw-bold list-group-item" id="tradeModal">Trade:
+                                                {{ trade.ticker}} {{trade.position }} {{trade.trade_amount }}</h5>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item"><strong>Trader: </strong>{{ trade.trader }}
+                                                </li>
+                                                <li class="list-group-item"><strong>Ticker: </strong>{{ trade.ticker }}
+                                                </li>
+                                                <li class="list-group-item"><strong>Date Opened:
+                                                    </strong>{{ trade.date_opened }}</li>
+                                                <li class="list-group-item"><strong>Trade Amount:
+                                                    </strong>{{ trade.trade_amount }}</li>
+                                                <li class="list-group-item"><strong>Opening Price:
+                                                    </strong>{{ trade.opening_price }}</li>
+                                                <li class="list-group-item"><strong>Position:
+                                                    </strong>{{ trade.position }}</li>
+                                                <li class="list-group-item"><strong>Units Transacted:
+                                                    </strong>{{ trade.units_transacted }}</li>
+                                                <li class="list-group-item"><strong>Trade Status:
+                                                    </strong>{{ trade.trade_status }}</li>
+                                                <li class="list-group-item"><strong>Broker: </strong>{{ trade.broker }}
+                                                </li>
+                                                <li class="list-group-item"><strong>Closing Price:
+                                                    </strong>{{ trade.closing_price }}</li>
+                                                <li class="list-group-item"><strong>Date Closed:
+                                                    </strong>{{ trade.date_closed }}</li>
+                                                <li class="list-group-item"><strong>Trade Duration:
+                                                    </strong>{{ trade.trade_duration }}</li>
+                                                <li class="list-group-item"><strong>Realised Profit/Loss:
+                                                    </strong>{{ trade.realised_pl }}</li>
+                                                <li class="list-group-item"><strong>Result: </strong>{{ trade.result }}
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-dark"
+                                            data-bs-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
                     </tr>
                     {% endfor %}
                 </tbody>
