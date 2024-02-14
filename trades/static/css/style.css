@@ -48,6 +48,9 @@ color: white;
     border-radius: 5px;
 }
 
+#add-trade-form-container{
+    min-height: 50rem;
+}
 
 
 
