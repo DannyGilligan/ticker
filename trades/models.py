@@ -23,9 +23,9 @@ class Trade(models.Model):
 
     date_opened = models.DateField()
     
-    trade_amount = MoneyField(max_digits=10, decimal_places=2, default_currency='USD')
+    trade_amount = MoneyField(max_digits=10, decimal_places=2, default_currency='USD', min=1)
     
-    opening_price = MoneyField(max_digits=10, decimal_places=2, default_currency='USD')
+    opening_price = MoneyField(max_digits=10, decimal_places=2, default_currency='USD', min=1)
     
     position = models.CharField(
         max_length = 4,
@@ -44,7 +44,7 @@ class Trade(models.Model):
         choices = BROKER_CHOICES
     )
 
-    closing_price = MoneyField(max_digits=10, decimal_places=2, default_currency='USD', blank=True, null=True)
+    closing_price = MoneyField(max_digits=10, decimal_places=2, default_currency='USD', blank=True, null=True, min=1)
 
     date_closed = models.DateField(blank=True, null=True)
 

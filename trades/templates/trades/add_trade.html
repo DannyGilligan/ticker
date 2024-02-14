@@ -8,18 +8,6 @@ the link is here: https://youtu.be/EUMpUUXKvP0?si=noWr2ZA1PkCwgyXt -->
 
 <h3 class="text-center m-5 fw-bold"  style="color: green;">Add Trade <i class="fa-solid fa-plus"></i></h3>
 
-<!-- if the Django success token variable from the add_trade_details function in views.py
-is returned as True, the code below will run-->
-{% if success %}
-    <div class="alert alert success text-center m-3" role="alert">
-        <p class="mt-5 fw-bold">Trade details added successfully</p>
-        <a href="{% url 'index' %}" class="btn btn-success mt-5">Return to Main Menu</a>
-    </div>
-
-
-<!-- The code below is displayed first to the user, and will run until
-    the Django success token variable is returned as True -->
-{% else %}
 <div id="add-trade-form-container" class="row justify-content-center">
     <div class="col-8">
         <form action="{% url 'add_trade' %}" method="POST">
@@ -32,9 +20,5 @@ is returned as True, the code below will run-->
         </form>
     </div>
 </div>
-
-{% endif %}
-
-
 
 {% endblock %}
