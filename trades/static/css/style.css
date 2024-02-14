@@ -49,14 +49,9 @@ color: white;
     border-radius: 5px;
 }
 
-/* #add-trade-form-container{
-    min-height: 50rem;
+.action-button{
+    min-width: 3.6rem;
 }
-
-#menu-container{
-    min-height: 43rem;
-} */
-
 
 
 @media only screen and (max-width: 572px) {
