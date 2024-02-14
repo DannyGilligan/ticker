@@ -84,7 +84,7 @@ def add_trade_details(request):
             trade_status = new_trade_status,
             broker = new_broker,
             closing_price = new_closing_price,
-            new_date_closed = date_closed
+            date_closed = new_date_closed
         )
 
         new_trade.save()

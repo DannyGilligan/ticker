@@ -14,36 +14,51 @@ class TradeDetailsForm(forms.ModelForm):
             'trader': 'Trader',
             'ticker': 'Ticker',
             'date_opened': 'Date opened',
-            'trade_amount': 'Trade amount',
-            'opening_price': 'Opening price',
+            'trade_amount': 'Trade amount $',
+            'opening_price': 'Opening price $',
             'position': 'Position',
             'trade_status': 'Trade status',
             'broker': 'Broker',
-            'closing_price': 'Closing price',
+            'closing_price': 'Closing price $',
             'date_closed': 'Date closed',
         }
+
+
+
         widgets = {
-            'trader': forms.TextInput(attrs={'class': 'form-control'}),
-
-            'ticker': forms.Select(choices=STOCK_CHOICES),
-
-            'date_opened': forms.DateInput(
-                attrs={'type': 'date', 'placeholder': 'yyyy-mm-dd (DOB)', 'class': 'form-control'}
-            ),
-
+            'trader': forms.Select(attrs={'class': 'form-control'}),
+            'ticker': forms.Select(attrs={'class': 'form-control'}),
+            'date_opened': forms.DateInput(attrs={'class': 'form-control','placeholder':'Only YYYY/MM/DD format accepted'}),
             'trade_amount': forms.NumberInput(attrs={'class': 'form-control'}),
-
             'opening_price': forms.NumberInput(attrs={'class': 'form-control'}),
-
-            'position': forms.Select(choices=POSITION_CHOICES),
-
-            'trade_status': forms.Select(choices=STATUS_CHOICES),
-
-            'broker': forms.Select(choices=BROKER_CHOICES),
-
+            'position': forms.Select(attrs={'class': 'form-control'}),
+            'trade_status': forms.Select(attrs={'class': 'form-control'}),
+            'broker': forms.Select(attrs={'class': 'form-control'}),
             'closing_price': forms.NumberInput(attrs={'class': 'form-control'}),
+            'date_closed': forms.DateInput(attrs={'class': 'form-control','placeholder':'Only YYYY/MM/DD format accepted'}),
 
-            'date_closed': forms.DateInput(
-                attrs={'type': 'date', 'placeholder': 'yyyy-mm-dd (DOB)', 'class': 'form-control'}
-            )
         }
+        
+        # widgets = {
+        #     'trader': forms.TextInput(attrs={'class': 'form-control'}),
+
+        #     'ticker': forms.Select(choices=STOCK_CHOICES),
+
+
+
+        #     'trade_amount': forms.NumberInput(attrs={'class': 'form-control'}),
+
+        #     'opening_price': forms.NumberInput(attrs={'class': 'form-control'}),
+
+        #     'position': forms.Select(choices=POSITION_CHOICES),
+
+        #     'trade_status': forms.Select(choices=STATUS_CHOICES),
+
+        #     'broker': forms.Select(choices=BROKER_CHOICES),
+
+        #     'closing_price': forms.NumberInput(attrs={'class': 'form-control'}),
+
+        #     'date_closed': forms.DateInput(
+        #         attrs={'type': 'date', 'placeholder': 'yyyy-mm-dd', 'class': 'form-control'}
+        #     )
+        # }
