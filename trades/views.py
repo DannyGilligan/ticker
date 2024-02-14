@@ -97,10 +97,7 @@ def add_trade_details(request):
         )
 
         new_trade.save()
-        return render(request, 'trades/add_trade.html', {
-            'form': TradeDetailsForm(),
-            'success': True # Triggers the if statement condition in add_trade.html
-        })
+        return render(request, 'trades/confirm_add.html')
     else:
         form = TradeDetailsForm()
     return render(request, 'trades/add_trade.html', {
@@ -131,10 +128,7 @@ def edit_trade(request, id):
         if form.is_valid():
             form = TradeDetailsForm(request.POST, instance=trade)
             form.save()
-            return render(request, 'trades/edit_trade.html', {
-                'form': form,
-                'success': True # Triggers the if statement condition in edit_trade.html
-            })
+            return render(request, 'trades/confirm_edit.html')
     else:
         trade = Trade.objects.get(pk=id)
         form = TradeDetailsForm(instance=trade)

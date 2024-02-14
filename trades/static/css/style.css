@@ -53,8 +53,9 @@ color: white;
     min-width: 3.6rem;
 }
 
-#delete-confirmation-text{
-    color: #188754;
+#delete-confirmation-container{
+    padding-bottom: 3rem;
+    color: #188754
 }
 
 
