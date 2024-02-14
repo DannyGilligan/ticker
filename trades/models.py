@@ -2,6 +2,10 @@ from django.db import models
 from django.contrib.auth.models import User
 from djmoney.models.fields import MoneyField
 from datetime import date
+from djmoney.money import Money
+from djmoney.models.validators import MaxMoneyValidator, MinMoneyValidator
+
+
 
 # Create your models here.
 
@@ -23,9 +27,9 @@ class Trade(models.Model):
 
     date_opened = models.DateField()
     
-    trade_amount = MoneyField(max_digits=10, decimal_places=2, default_currency='USD', min=1)
+    trade_amount = MoneyField(max_digits=10, decimal_places=2, default_currency='USD', validators=[MinMoneyValidator(10),])
     
-    opening_price = MoneyField(max_digits=10, decimal_places=2, default_currency='USD', min=1)
+    opening_price = MoneyField(max_digits=10, decimal_places=2, default_currency='USD', validators=[MinMoneyValidator(10),])
     
     position = models.CharField(
         max_length = 4,
@@ -44,7 +48,7 @@ class Trade(models.Model):
         choices = BROKER_CHOICES
     )
 
-    closing_price = MoneyField(max_digits=10, decimal_places=2, default_currency='USD', blank=True, null=True, min=1)
+    closing_price = MoneyField(max_digits=10, decimal_places=2, default_currency='USD', blank=True, null=True, validators=[MinMoneyValidator(10),])
 
     date_closed = models.DateField(blank=True, null=True)
 
