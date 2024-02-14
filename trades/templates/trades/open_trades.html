@@ -107,7 +107,7 @@
                                             <p>Are you sure you want to permanently delete this trade?</p>
                                         </div>
                                         <div class="modal-footer">
-                                            <form action="{ url 'delete' trade.id %}" method="POST">
+                                            <form action="{ url 'delete_trade' trade.id %}" method="POST">
                                                 {% csrf_token %}
                                                 <input type="submit" class="btn btn-danger" value="Yes, delete">
                                             </form>
