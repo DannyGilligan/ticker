@@ -6,15 +6,15 @@ the link is here: https://youtu.be/EUMpUUXKvP0?si=noWr2ZA1PkCwgyXt -->
 
 {% block body %}
 
-<h3 class="text-center m-5 fw-bold"  style="color:black;">Edit Trade</i></h3>
+<h3 class="text-center m-5 fw-bold" style="color:black;">Edit Trade</i></h3>
 
 <!-- if the Django success token variable from the add_trade_details function in views.py
 is returned as True, the code below will run-->
 {% if success %}
-    <div class="alert alert success text-center m-3" role="alert">
-        <p class="mt-5 fw-bold">Trade details edited successfully</p>
-        <a href="{% url 'index' %}" class="btn btn-success mt-5">Return to Main Menu</a>
-    </div>
+<div class="alert alert success text-center m-3" role="alert">
+    <p class="mt-5 fw-bold">Trade details edited successfully</p>
+    <a href="{% url 'index' %}" class="btn btn-success mt-5">Return to Main Menu</a>
+</div>
 
 
 <!-- The code below is displayed first to the user, and will run until
@@ -25,8 +25,10 @@ is returned as True, the code below will run-->
         <form action="" method="POST">
             {% csrf_token %}
             {{ form.as_p }}
-            <button type="submit" class="btn btn-success mt-2">Save changes</button>
-            <a href="{% url 'index' %}" class="btn btn-dark mt-2 mx-3">Cancel</a>
+            <div class="text-center">
+                <button type="submit" class="btn btn-success mt-2">Save changes</button>
+                <a href="{% url 'index' %}" class="btn btn-dark mt-2 mx-3">Cancel</a>
+            </div>
         </form>
     </div>
 </div>

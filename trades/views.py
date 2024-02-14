@@ -63,11 +63,11 @@ def add_trade_details(request):
     """
     The add_trade details view will allow the user to pass
     cleaned data through the TradeDetailsForm and save the
-    data, a success token variable will be generated once the 
-    data is saved successfully, this will be used to generate 
-    an alert to the user confirming the trade details were added.
-    If the data was invalid, the form will be rendered again to 
-    the user allowing them to enter valid details.
+    data, Once the new trade data is accepted, the user will
+    be directed to a confirmation screen informing them
+    that the trade has been updated successfully. If the
+    data was invalid, the form will be rendered again to the
+    user allowing them to enter valid details.
     """
     if request.method == 'POST':
       form = TradeDetailsForm(request.POST)  
@@ -95,7 +95,6 @@ def add_trade_details(request):
             closing_price = new_closing_price,
             date_closed = new_date_closed
         )
-
         new_trade.save()
         return render(request, 'trades/confirm_add.html')
     else:
@@ -114,13 +113,13 @@ def edit_trade(request, id):
     """
     The edit_trade view will allow the user to pass
     cleaned data through the TradeDetailsForm and save the
-    data, the form will be rendered with the specific trade data
-    already populated in the form fields (the trade id primary key is
-    used here to achieve this), a success token variable will
-    be generated once the data is saved successfully, this will
-    be used to generate an alert to the user confirming the trade
-    details were added. If the data was invalid, the form will be
-    rendered again to the user allowing them to enter valid details.
+    data, the form will be rendered with the trade data related to the
+    selected trade already populated in the form fields (the trade id 
+    primary key is used here to achieve this). Once the updated 
+    data is accepted, the user will be directed to a confirmation
+    screen informing them that the trade has been updated successfully.
+    If the data was invalid, the form will be rendered again to the
+    user allowing them to enter valid details.
     """
     if request.method =='POST':
         trade = Trade.objects.get(pk=id)
