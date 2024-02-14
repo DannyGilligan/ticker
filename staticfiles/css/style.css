@@ -1,5 +1,5 @@
 body {
-    max-width: 1200px;
+    max-width: 900px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 6rem;
@@ -49,14 +49,13 @@ color: white;
     border-radius: 5px;
 }
 
-/* #add-trade-form-container{
-    min-height: 50rem;
+.action-button{
+    min-width: 3.6rem;
 }
 
-#menu-container{
-    min-height: 43rem;
-} */
-
+#delete-confirmation-text{
+    color: #188754;
+}
 
 
 @media only screen and (max-width: 572px) {

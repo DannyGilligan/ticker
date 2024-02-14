@@ -35,8 +35,7 @@ class TradeDetailsForm(forms.ModelForm):
             'trade_status': forms.Select(attrs={'class': 'form-control'}),
             'broker': forms.Select(attrs={'class': 'form-control'}),
             'closing_price': forms.NumberInput(attrs={'class': 'form-control'}),
-            'date_closed': forms.DateInput(attrs={'class': 'form-control','placeholder':'Only YYYY/MM/DD format accepted'}),
-
+            'date_closed': forms.DateInput(attrs={'class': 'form-control','placeholder':'Only YYYY/MM/DD format accepted'})
         }
         
 
