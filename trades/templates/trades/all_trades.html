@@ -18,23 +18,23 @@
                 <caption>Showing records of all Open and Closed trades in your Ticker account</caption>
                 <thead>
                     <tr>
-                        <th scope="col" class=".d-block">Opened</th>
-                        <th scope="col" class=".d-block">Ticker</th>
+                        <th scope="col">Opened</th>
+                        <th scope="col">Ticker</th>
                         <th scope="col" class="hide-on-mobile">Position</th>
-                        <th scope="col" class=".d-block">Amount</th>
-                        <th scope="col" class=".d-block">Status</th>
-                        <th scope="col" class=".d-block">Actions</th>
+                        <th scope="col">Amount</th>
+                        <th scope="col">Status</th>
+                        <th scope="col">Actions</th>
                     </tr>
                 </thead>
                 <tbody>
 
                     {% for trade in trades %}
                     <tr>
-                        <td class="d-block">{{ trade.date_opened }}</td>
-                        <td class="d-block">{{ trade.ticker }}</td>
+                        <td>{{ trade.date_opened }}</td>
+                        <td>{{ trade.ticker }}</td>
                         <td class="hide-on-mobile">{{ trade.position }}</td>
-                        <td class="d-block">{{ trade.trade_amount }}</td>
-                        <td class="hide-on-mobile">{{ trade.trade_status }}</td>
+                        <td>{{ trade.trade_amount }}</td>
+                        <td>{{ trade.trade_status }}</td>
                         <td>
                             <!-- The View button code is below -->
                             <button type="button" class="btn btn-outline-dark btn-sm me-1 action-button"
