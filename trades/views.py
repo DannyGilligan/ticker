@@ -84,16 +84,16 @@ def add_trade_details(request):
             new_date_closed = form.cleaned_data['date_closed']
 
             new_trade = Trade(
-                trader = new_trader,
-                ticker = new_ticker,
-                date_opened = new_date_opened,
-                trade_amount = new_trade_amount,
-                opening_price = new_opening_price,
-                position = new_position,
-                trade_status = new_trade_status,
-                broker = new_broker,
-                closing_price = new_closing_price,
-                date_closed = new_date_closed
+                trader=new_trader,
+                ticker=new_ticker,
+                date_opened=new_date_opened,
+                trade_amount=new_trade_amount,
+                opening_price=new_opening_price,
+                position=new_position,
+                trade_status=new_trade_status,
+                broker=new_broker,
+                closing_price=new_closing_price,
+                date_closed=new_date_closed
             )
             new_trade.save()
             return render(request, 'trades/confirm_add.html')

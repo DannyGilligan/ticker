@@ -91,7 +91,7 @@
                                 href="{% url 'edit_trade' trade.id %}">Edit</a>
                             <!-- The Delete button code is below -->
                             <button type="button" class="btn btn-outline-danger btn-sm me-1 action-button"
-                                data-bs-toggle="modal" data-bs-target="#delete_trade{{ trade.id }}">Delete</button>
+                                data-bs-toggle="modal" data-bs-target="#delete-trade{{ trade.id }}">Delete</button>
 
                             <!-- The Modal section for deleting a trade starts here -->
                             <div class="modal fade" id="delete-trade{{ trade.id }}" tabindex="-1" role="dialog"
@@ -111,8 +111,8 @@
                                                 {% csrf_token %}
                                                 <input type="submit" class="btn btn-danger" value="Yes, delete">
                                             </form>
-                                            <button type="button" class="btn btn-dark" data-bs-dismiss="modal">No,
-                                                cancel</button>
+                                            <button type="button" class="btn btn-dark"
+                                                data-bs-dismiss="modal">No, cancel</button>
                                         </div>
                                     </div>
                                 </div>

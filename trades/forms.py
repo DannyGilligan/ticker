@@ -26,4 +26,12 @@ class TradeDetailsForm(forms.ModelForm):
         }
 
 
-
+        widgets = {
+        'trader': forms.Select(attrs={'class': 'form-control'}),
+        'ticker': forms.Select(attrs={'class': 'form-control'}),
+        'date_opened': forms.DateInput(attrs={'class': 'form-control','placeholder':'Only YYYY-MM-DD format accepted'}),
+        'position': forms.Select(attrs={'class': 'form-control'}),
+        'trade_status': forms.Select(attrs={'class': 'form-control'}),
+        'broker': forms.Select(attrs={'class': 'form-control'}),
+        'date_closed': forms.DateInput(attrs={'class': 'form-control','placeholder':'Only YYYY-MM-DD format accepted'}),
+        }
