@@ -144,6 +144,11 @@ def edit_trade(request, id):
 
 
 def delete_trade(request, id):
+    """
+    The delete_trade view will delete the selected
+    trade from the database then redirect the user
+    back to the main menu screen.
+    """
     if request.method == 'POST':
         trade = Trade.objects.get(pk=id)
         trade.delete()

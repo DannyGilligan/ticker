@@ -58,6 +58,7 @@ color: white;
 }
 
 
+
 @media only screen and (max-width: 572px) {
     .hide-on-mobile {
         display: none;
