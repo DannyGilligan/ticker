@@ -60,6 +60,15 @@ def view_trade(request, id):
 # link: https://youtu.be/EUMpUUXKvP0?si=BM8WFT2mUgI9I0sI
 
 def add_trade_details(request):
+    """
+    The add_trade details view will allow the user to pass
+    cleaned data through the TradeDetailsForm and save the
+    data, a success token variable will be generated once the 
+    data is saved successfully, this will be used to generate 
+    an alert to the user confirming the trade details were added.
+    If the data was invalid, the form will be rendered again to 
+    the user allowing them to enter valid details.
+    """
     if request.method == 'POST':
       form = TradeDetailsForm(request.POST)  
       if form.is_valid():
@@ -96,4 +105,37 @@ def add_trade_details(request):
         form = TradeDetailsForm()
     return render(request, 'trades/add_trade.html', {
         'form': TradeDetailsForm()
+    })
+
+# The edit_trade code below was adapted from a Django crash 
+# course tutorial published by YouTube channel 'Bob's Programming Academy"
+# link: https://youtu.be/EUMpUUXKvP0?si=BM8WFT2mUgI9I0sI
+
+
+def edit_trade(request, id):
+    """
+    The edit_trade view will allow the user to pass
+    cleaned data through the TradeDetailsForm and save the
+    data, the form will be rendered with the specific trade data
+    already populated in the form fields (the trade id primary key is
+    used here to achieve this), a success token variable will
+    be generated once the data is saved successfully, this will
+    be used to generate an alert to the user confirming the trade
+    details were added. If the data was invalid, the form will be
+    rendered again to the user allowing them to enter valid details.
+    """
+    if request.method == 'POST':
+        trade = Trade.objects.get(pk=id)
+        form = TradeDetailsForm(request.POST, instance=trade)
+        if form.is_valid():
+            form.save()
+            return render(request, 'trades/edit_trade.html', {
+                'form': form,
+                'success': True
+            })
+    else:
+        trade = Trade.objects.get(pk=id)
+        form = TradeDetailsForm(instance=trade)
+    return render(request, 'trades/edit_trade.html', {
+        'form': form
     })
