@@ -22,7 +22,7 @@ is returned as True, the code below will run-->
 {% else %}
 <div id="add-trade-form-container" class="row justify-content-center">
     <div class="col-8">
-        <form action="" method="POST">
+        <form action="{% url 'edit_trade' %}" method="POST">
             {% csrf_token %}
             {{ form.as_p }}
             <button type="submit" class="btn btn-success mt-2">Save changes</button>
