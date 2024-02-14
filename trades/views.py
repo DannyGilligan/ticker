@@ -99,7 +99,7 @@ def add_trade_details(request):
         new_trade.save()
         return render(request, 'trades/add_trade.html', {
             'form': TradeDetailsForm(),
-            'success': True
+            'success': True # Triggers the if statement condition in add_trade.html
         })
     else:
         form = TradeDetailsForm()
@@ -110,6 +110,19 @@ def add_trade_details(request):
 # The edit_trade code below was adapted from a Django crash 
 # course tutorial published by YouTube channel 'Bob's Programming Academy"
 # link: https://youtu.be/EUMpUUXKvP0?si=BM8WFT2mUgI9I0sI
+
+
+    """
+    The edit_trade view will allow the user to pass
+    cleaned data through the TradeDetailsForm and save the
+    data, the form will be rendered with the specific trade data
+    already populated in the form fields (the trade id primary key is
+    used here to achieve this), a success token variable will
+    be generated once the data is saved successfully, this will
+    be used to generate an alert to the user confirming the trade
+    details were added. If the data was invalid, the form will be
+    rendered again to the user allowing them to enter valid details.
+    """
 
 
 def edit_trade(request, id):
@@ -124,18 +137,27 @@ def edit_trade(request, id):
     details were added. If the data was invalid, the form will be
     rendered again to the user allowing them to enter valid details.
     """
-    if request.method == 'POST':
+    if request.method =='POST':
         trade = Trade.objects.get(pk=id)
         form = TradeDetailsForm(request.POST, instance=trade)
         if form.is_valid():
+            form = TradeDetailsForm(request.POST, instance=trade)
             form.save()
             return render(request, 'trades/edit_trade.html', {
                 'form': form,
-                'success': True
+                'success': True # Triggers the if statement condition in edit_trade.html
             })
     else:
         trade = Trade.objects.get(pk=id)
         form = TradeDetailsForm(instance=trade)
     return render(request, 'trades/edit_trade.html', {
         'form': form
-    })
+        })
+
+
+
+def delete_trade(request, id):
+    if request.method == 'POST':
+        trade = Trade.objects.get(pk=id)
+        trade.delete()
+    return HttpResponseRedirect(reverse('index'))

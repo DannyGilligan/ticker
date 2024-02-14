@@ -6,10 +6,14 @@
     <h3 class="m-5 text-center fw-bold text-body">All Trades</h3>
     <div class="row">
         <div class="col-12">
-            <!-- The 'ctrades' variable below is passed in from 
+            <!-- The 'trades' Django variable below is passed in from 
                 the 'all_trades' view in the views.py file, the If
                 function below first check if there are values in that variable -->
             {% if trades %}
+            <!-- If there are values inside the 'trades' variable, the For loop below will
+                then iterate over those values, and return the values associated with the Django variables
+                injected into the html table cells below -->
+
             <table class="table table-hover table-responsive">
                 <caption>Showing records of all Open and Closed trades in your Ticker account</caption>
                 <thead>
@@ -22,9 +26,7 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <!-- If there are values inside the 'trades' variable, the For loop below will
-                        then iterate over those values, and return the values associated with the Django variables
-                        injected into the html table cells below -->
+
                     {% for trade in trades %}
                     <tr>
                         <td class=".d-block">{{ trade.date_opened }}</td>
@@ -32,9 +34,12 @@
                         <td class="hide-on-mobile">{{ trade.position }}</td>
                         <td class=".d-block">{{ trade.trade_amount }}</td>
                         <td>
+                            <!-- The View button code is below -->
                             <button type="button" class="btn btn-outline-dark btn-sm me-1"
                                 href="{% url 'view_trade' trade.id %}" data-bs-toggle="modal"
                                 data-bs-target="#selectedTrade{{ trade.id }}">View</button>
+
+
 
                             <!-- The modal below will be displayed when the user clicks on the 'View'
                             button, it contains additional relevant details related to the trade, including
@@ -80,11 +85,16 @@
                                         </div>
                                         <div class="modal-footer">
                                             <button type="button" class="btn btn-dark"
-                                            data-bs-dismiss="modal">Close</button>
+                                                data-bs-dismiss="modal">Close</button>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                            <!-- The Modal section ends above this comment -->
+
+                            <!-- The Edit button code is below -->
+                            <a class="btn btn-outline-success btn-sm me-1"
+                                href="{% url 'edit_trade' trade.id %}">Edit</a>
                         </td>
                     </tr>
                     {% endfor %}
