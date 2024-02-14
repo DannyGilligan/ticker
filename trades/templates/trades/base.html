@@ -64,6 +64,9 @@
                         <a class="nav-link fw-bold text-wrap {% block nav_item_all %}{% endblock nav_item_all %}" style="color: black;" href="{% url 'all_trades' %}">View
                             All</a>
                     </li>
+                    <!-- Injects a nav tab when on the Edit Trade screen, unvailable to user outside of this context -->
+                    {% block nav_tab_edit %}
+                    {% endblock nav_tab_edit %}
                 </ul>
             </div>
         </div>

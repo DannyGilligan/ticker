@@ -64,6 +64,7 @@ https://stackoverflow.com/questions/51701512/how-to-change-the-color-of-active-t
 
 .nav-tabs .nav-item a {
     border: none;
+    margin-top: 0;
 }
 
 .nav-tabs .nav-item .nav-link.active {
@@ -71,21 +72,32 @@ https://stackoverflow.com/questions/51701512/how-to-change-the-color-of-active-t
     border-top: 4px solid #40A758;
     border-left: 1px solid black;
     border-right: 1px solid black;
-
+    margin-top: 0;
 }
 
 .nav-tabs .nav-item a:hover {
     color: black;
     border-top: 4px solid #40A758;
+    z-index: -1;
+    margin-top: 0;
 }
 
 .nav-tabs .nav-item a:after {
     color: black;
     border-top: 4px solid #40A758;
     border-bottom: none;
+    z-index: -1;
+    margin-top: 0;
 }
 
-
+#edit-trade-tab{
+    color: black;
+    border-top: 4px solid orange;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    margin-top: 0;
+    border-bottom: 1px solid white;
+}
    
 
 
