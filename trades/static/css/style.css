@@ -53,6 +53,10 @@ color: white;
     min-width: 3.6rem;
 }
 
+#delete-confirmation-text{
+    color: #188754;
+}
+
 
 @media only screen and (max-width: 572px) {
     .hide-on-mobile {

@@ -160,4 +160,4 @@ def delete_trade(request, id):
     if request.method == 'POST':
         trade = Trade.objects.get(pk=id)
         trade.delete()
-    return HttpResponseRedirect(reverse('index'))
+    return render(request, 'trades/index.html')
