@@ -2,6 +2,7 @@ body {
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 6rem;
 }
 
 
@@ -48,9 +49,13 @@ color: white;
     border-radius: 5px;
 }
 
-#add-trade-form-container{
+/* #add-trade-form-container{
     min-height: 50rem;
 }
+
+#menu-container{
+    min-height: 43rem;
+} */
 
 
 

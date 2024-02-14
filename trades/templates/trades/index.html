@@ -24,22 +24,26 @@
 
     <!-- Main Content Section starts here -->
 
+    <div id="menu-container">
+        <div id="hero-container">
+            <img src="static/images/ticker-hero-image.webp" alt="Ticker-logo-image" id="hero-image">
+        </div>
 
-    <div id="hero-container">
-        <img src="static/images/ticker-hero-image.webp" alt="Ticker-logo-image" id="hero-image">
+        <div class="d-grid gap-2 col-sm-8 col-md-6 col-lg-3 mx-auto">
+
+            <a class="btn btn-outline-success btn-lg my-1" type="button" href="{% url 'add_trade' %}">Add Trade <i
+                    class="fa-solid fa-plus"></i></a>
+
+            <a class="btn btn btn-outline-dark btn-lg my-1" type="button" href="{% url 'open_trades' %}">View Open
+                Trades</a>
+
+            <a class="btn btn btn-outline-dark btn-lg my-1" type="button" href="{% url 'closed_trades' %}">View Closed
+                Trades</a>
+
+            <a class="btn btn btn-outline-dark btn-lg my-1" type="button" href="{% url 'all_trades' %}">View All
+                Trades</a>
+        </div>
     </div>
-
-    <div class="d-grid gap-2 col-sm-8 col-md-6 col-lg-3 mx-auto">
-
-        <a class="btn btn-outline-success btn-lg my-1" type="button" href="{% url 'add_trade' %}">Add Trade <i class="fa-solid fa-plus"></i></a>
-
-        <a class="btn btn btn-outline-dark btn-lg my-1" type="button" href="{% url 'open_trades' %}">View Open Trades</a>
-
-        <a class="btn btn btn-outline-dark btn-lg my-1" type="button" href="{% url 'closed_trades' %}">View Closed Trades</a>
-
-        <a class="btn btn btn-outline-dark btn-lg my-1" type="button" href="{% url 'all_trades' %}">View All Trades</a>
-    </div>
-
 
 
 
