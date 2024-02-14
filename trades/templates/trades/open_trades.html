@@ -92,6 +92,32 @@
                             <!-- The Delete button code is below -->
                             <button type="button" class="btn btn-outline-danger btn-sm me-1 action-button"
                                 data-bs-toggle="modal" data-bs-target="#delete_trade{{ trade.id }}">Delete</button>
+
+                            <!-- The Modal section for deleting a trade starts here -->
+                            <div class="modal fade" id="delete-trade{{ trade.id }}" tabindex="-1" role="dialog"
+                                aria-labelledby="selectedTrade{{ trade.id }}" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title fw-bold list-group-item" id="tradeModal">Trade:
+                                                {{ trade.ticker}} {{trade.position }} {{trade.trade_amount }}</h5>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body text-center">
+                                            <p>Are you sure you want to permanently delete this trade?</p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <form action="{ url 'delete' trade.id %}" method="POST">
+                                                {% csrf_token %}
+                                                <input type="submit" class="btn btn-danger" value="Yes, delete">
+                                            </form>
+                                            <button type="button" class="btn btn-dark" data-bs-dismiss="modal">No,
+                                                cancel</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- The Modal for deleting a trade ends here -->
                         </td>
                     </tr>
                     {% endfor %}

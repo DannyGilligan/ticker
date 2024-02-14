@@ -9,7 +9,9 @@ BROKER_CHOICES = (('ETORO','ETORO'), ('ROBINHOOD','ROBINHOOD'), ('IG','IG'), ('D
 class TradeDetailsForm(forms.ModelForm):
     class Meta:
         model = Trade
+
         fields = ['trader', 'ticker', 'date_opened', 'trade_amount', 'opening_price', 'position', 'trade_status', 'broker', 'closing_price', 'date_closed']
+
         labels = {
             'trader': 'Trader',
             'ticker': 'Ticker',
@@ -22,8 +24,6 @@ class TradeDetailsForm(forms.ModelForm):
             'closing_price': 'Closing price $',
             'date_closed': 'Date closed',
         }
-
-
 
         widgets = {
             'trader': forms.Select(attrs={'class': 'form-control'}),
@@ -39,26 +39,4 @@ class TradeDetailsForm(forms.ModelForm):
 
         }
         
-        # widgets = {
-        #     'trader': forms.TextInput(attrs={'class': 'form-control'}),
 
-        #     'ticker': forms.Select(choices=STOCK_CHOICES),
-
-
-
-        #     'trade_amount': forms.NumberInput(attrs={'class': 'form-control'}),
-
-        #     'opening_price': forms.NumberInput(attrs={'class': 'form-control'}),
-
-        #     'position': forms.Select(choices=POSITION_CHOICES),
-
-        #     'trade_status': forms.Select(choices=STATUS_CHOICES),
-
-        #     'broker': forms.Select(choices=BROKER_CHOICES),
-
-        #     'closing_price': forms.NumberInput(attrs={'class': 'form-control'}),
-
-        #     'date_closed': forms.DateInput(
-        #         attrs={'type': 'date', 'placeholder': 'yyyy-mm-dd', 'class': 'form-control'}
-        #     )
-        # }
