@@ -93,8 +93,10 @@
                             <!-- The Modal section ends above this comment -->
 
                             <!-- The Edit button code is below -->
-                            <a class="btn btn-outline-success btn-sm me-1"
+                            <a class="btn btn-outline-success btn-sm my-1 me-1 action-button"
                                 href="{% url 'edit_trade' trade.id %}">Edit</a>
+
+                            <button type="button" class="btn btn-outline-danger btn-sm me-1" data-bs-toggle="modal" data-bs-target="#delete_trade{{ trade.id }}">Delete</button>
                         </td>
                     </tr>
                     {% endfor %}
