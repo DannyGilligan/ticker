@@ -35,26 +35,34 @@
             </button>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0 mt-3">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 mt-3 nav-tabs">
+
+                    <!-- code for extending the active nav class to child templates was adapted from a Stackoverflow
+                    post here: https://stackoverflow.com/questions/50028673/changing-active-class-in-bootstrap-navbar-not-staying-in-inherited-django-templa -->
+
                     <li class="nav-item mx-2">
                         <a class="nav-link font-weight-bold fw-bold text-wrap" style="color: black;" aria-current="page"
                             href="{% url 'index' %}">Home</a>
                     </li>
 
                     <li class="nav-item mx-2">
-                        <a class="nav-link fw-bold text-wrap" style="color: green;" href="{% url 'add_trade' %}">Add Trade <i class="fa-solid fa-plus"></i></a>
+                        <a class="nav-link fw-bold text-wrap {% block nav_item_add %}{% endblock nav_item_add %}" style="color: green;" href="{% url 'add_trade' %}">Add
+                            Trade <i class="fa-solid fa-plus"></i></a>
                     </li>
 
                     <li class="nav-item mx-2">
-                        <a class="nav-link fw-bold text-wrap" style="color: black;" href="{% url 'open_trades' %}">View Open</a>
+                        <a class="nav-link fw-bold text-wrap {% block nav_item_open %}{% endblock nav_item_open %}" style="color: black;" href="{% url 'open_trades' %}">View
+                            Open</a>
                     </li>
 
                     <li class="nav-item mx-2">
-                        <a class="nav-link fw-bold text-wrap" style="color: black;" href="{% url 'closed_trades' %}">View Closed</a>
+                        <a class="nav-link fw-bold text-wrap {% block nav_item_closed %}{% endblock nav_item_closed %}" style="color: black;"
+                            href="{% url 'closed_trades' %}">View Closed</a>
                     </li>
 
                     <li class="nav-item mx-2">
-                        <a class="nav-link fw-bold text-wrap" style="color: black;" href="{% url 'all_trades' %}">View All</a>
+                        <a class="nav-link fw-bold text-wrap {% block nav_item_all %}{% endblock nav_item_all %}" style="color: black;" href="{% url 'all_trades' %}">View
+                            All</a>
                     </li>
                 </ul>
             </div>
@@ -71,17 +79,21 @@
     <!-- Footer starts here -->
     <footer class="fixed-bottom text-center" style="background-color: black;">
         <div class="container justify-content-center py-1">
-            <button type="button" class="btn btn-dark btn-sm mx-3 my-2"style="background-color: #188754;">
-                <a href="https://www.linkedin.com" target="_blank" style="text-decoration: none; color: white;"><i class="fa-brands fa-linkedin-in"></i></a>
-            </button>
-            <button type="button" class="btn btn-dark btn-sm mx-3 my-1"style="background-color: #188754;">
-                <a href="https://www.facebook.com" target="_blank" style="text-decoration: none; color: white;"><i class="fa-brands fa-facebook"></i></a>
+            <button type="button" class="btn btn-dark btn-sm mx-3 my-2" style="background-color: #188754;">
+                <a href="https://www.linkedin.com" target="_blank" style="text-decoration: none; color: white;"><i
+                        class="fa-brands fa-linkedin-in"></i></a>
             </button>
             <button type="button" class="btn btn-dark btn-sm mx-3 my-1" style="background-color: #188754;">
-                <a href="https://www.instagram.com" target="_blank" style="text-decoration: none; color: white;"><i class="fa-brands fa-instagram social-media"></i></a>
+                <a href="https://www.facebook.com" target="_blank" style="text-decoration: none; color: white;"><i
+                        class="fa-brands fa-facebook"></i></a>
             </button>
-            <button type="button" class="btn btn-dark btn-sm mx-3 my-1"style="background-color: #188754;">
-                <a href="https://www.x.com" target="_blank" style="text-decoration: none; color: white;"><i class="fa-brands fa-x-twitter"></i></a>
+            <button type="button" class="btn btn-dark btn-sm mx-3 my-1" style="background-color: #188754;">
+                <a href="https://www.instagram.com" target="_blank" style="text-decoration: none; color: white;"><i
+                        class="fa-brands fa-instagram social-media"></i></a>
+            </button>
+            <button type="button" class="btn btn-dark btn-sm mx-3 my-1" style="background-color: #188754;">
+                <a href="https://www.x.com" target="_blank" style="text-decoration: none; color: white;"><i
+                        class="fa-brands fa-x-twitter"></i></a>
             </button>
         </div>
         <div class="text-center text-white mb-1 text-center small" style="background-color: black;">
