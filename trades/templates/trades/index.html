@@ -44,11 +44,13 @@
 
             <a class="btn btn btn-outline-dark btn-lg my-1 mx-3" type="button" href="{% url 'all_trades' %}">View All
                 Trades</a>
-
+            
+            
             <a class="btn btn btn-outline-warning btn-lg my-1 fw-bold mx-3 {% if request.path == logout_url %}active{% endif %}"
                 aria-current="page" type="button" href="{% url 'account_logout' %}">Logout <i
                     class="fa-solid fa-arrow-right-from-bracket"></i></a>
 
+            <p id="logged-in-status" class="text-center fw-bold">Currently logged in as {{ user }}</p>
             {% else %}
 
 
