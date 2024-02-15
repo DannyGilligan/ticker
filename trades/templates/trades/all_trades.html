@@ -37,9 +37,9 @@
                         <td class="hide-on-mobile align-middle">{{ trade.trade_status }}</td>
                         <td class="align-middle">
                             <!-- The View button code is below -->
-                            <button type="button" class="btn btn-outline-dark btn-sm me-1 action-button"
+                            <a class="btn btn-outline-dark btn-sm me-1 action-button"
                                 href="{% url 'view_trade' trade.id %}" data-bs-toggle="modal"
-                                data-bs-target="#selectedTrade{{ trade.id }}">View</button>
+                                data-bs-target="#selectedTrade{{ trade.id }}">View</a>
 
 
 
@@ -51,9 +51,9 @@
                                 <div class="modal-dialog" role="document">
                                     <div class="modal-content">
                                         <div class="modal-header">
-                                            <h5 class="modal-title fw-bold list-group-item" id="tradeModal">Trade:
+                                            <h5 class="modal-title fw-bold list-group-item" id="tradeModal1">Trade:
                                                 {{ trade.ticker}} {{trade.position }} {{trade.trade_amount }}</h5>
-                                            </button>
+                                    
                                         </div>
                                         <div class="modal-body">
                                             <ul class="list-group list-group-flush">
@@ -98,8 +98,8 @@
                             <a class="btn btn-outline-success btn-sm my-1 me-1 action-button"
                                 href="{% url 'edit_trade' trade.id %}">Edit</a>
                             <!-- The Delete button code is below -->
-                            <button type="button" class="btn btn-outline-danger btn-sm me-1 action-button"
-                                data-bs-toggle="modal" data-bs-target="#delete-trade{{ trade.id }}">Delete</button>
+                            <a class="btn btn-outline-danger btn-sm me-1 action-button"
+                                data-bs-toggle="modal" data-bs-target="#delete-trade{{ trade.id }}">Delete</a>
 
                             <!-- The Modal section for deleting a trade starts here -->
                             <div class="modal fade" id="delete-trade{{ trade.id }}" tabindex="-1" role="dialog"
@@ -107,9 +107,9 @@
                                 <div class="modal-dialog" role="document">
                                     <div class="modal-content">
                                         <div class="modal-header">
-                                            <h5 class="modal-title fw-bold list-group-item" id="tradeModal">Trade:
+                                            <h5 class="modal-title fw-bold list-group-item" id="tradeModal2">Trade:
                                                 {{ trade.ticker}} {{trade.position }} {{trade.trade_amount }}</h5>
-                                            </button>
+                                           
                                         </div>
                                         <div class="modal-body text-center">
                                             <p>Are you sure you want to permanently delete this trade?</p>
