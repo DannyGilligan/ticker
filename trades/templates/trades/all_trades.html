@@ -30,12 +30,12 @@
 
                     {% for trade in trades %}
                     <tr>
-                        <td>{{ trade.date_opened }}</td>
-                        <td>{{ trade.ticker }}</td>
-                        <td class="hide-on-mobile">{{ trade.position }}</td>
-                        <td>{{ trade.trade_amount }}</td>
-                        <td class="hide-on-mobile">{{ trade.trade_status }}</td>
-                        <td>
+                        <td class="align-middle">{{ trade.date_opened }}</td>
+                        <td class="align-middle">{{ trade.ticker }}</td>
+                        <td class="hide-on-mobile align-middle">{{ trade.position }}</td>
+                        <td class="align-middle">{{ trade.trade_amount }}</td>
+                        <td class="hide-on-mobile align-middle">{{ trade.trade_status }}</td>
+                        <td class="align-middle">
                             <!-- The View button code is below -->
                             <button type="button" class="btn btn-outline-dark btn-sm me-1 action-button"
                                 href="{% url 'view_trade' trade.id %}" data-bs-toggle="modal"

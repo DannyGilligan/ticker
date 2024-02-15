@@ -76,6 +76,7 @@ https://stackoverflow.com/questions/51701512/how-to-change-the-color-of-active-t
     border-right: 1px solid black;
     margin-top: 0;
     padding-top: 4px;
+    
 }
 
 .nav-tabs .nav-item a:hover {
@@ -103,7 +104,11 @@ https://stackoverflow.com/questions/51701512/how-to-change-the-color-of-active-t
     border-bottom: 1px solid white;
     padding-top: 4px;
 }
-   
+
+
+#confirmation-text{
+    font-size: 1.5rem;
+}
 
 
 @media only screen and (max-width: 572px) {

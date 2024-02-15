@@ -26,10 +26,10 @@
                     injected into the html table cells below -->
                     {% for trade in open_trades %}
                     <tr>
-                        <td>{{ trade.date_opened }}</td>
-                        <td>{{ trade.ticker }}</td>
-                        <td class="hide-on-mobile">{{ trade.position }}</td>
-                        <td>{{ trade.trade_amount }}</td>
+                        <td class="align-middle">{{ trade.date_opened }}</td>
+                        <td class="align-middle">{{ trade.ticker }}</td>
+                        <td class="hide-on-mobile align-middle">{{ trade.position }}</td>
+                        <td class="align-middle">{{ trade.trade_amount }}</td>
                         <td>
                             <button type="button" class="btn btn-outline-dark btn-sm me-1 action-button"
                                 href="{% url 'view_trade' trade.id %}" data-bs-toggle="modal"
