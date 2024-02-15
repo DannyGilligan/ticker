@@ -65,7 +65,8 @@ https://stackoverflow.com/questions/51701512/how-to-change-the-color-of-active-t
 .nav-tabs .nav-item a {
     border: none;
     margin-top: 0;
-    padding-left: .3rem;;
+    padding-left: .3rem;
+    border-top: 4px transparent;
 }
 
 .nav-tabs .nav-item .nav-link.active {
@@ -74,6 +75,7 @@ https://stackoverflow.com/questions/51701512/how-to-change-the-color-of-active-t
     border-left: 1px solid black;
     border-right: 1px solid black;
     margin-top: 0;
+    padding-top: 4px;
 }
 
 .nav-tabs .nav-item a:hover {
@@ -81,6 +83,7 @@ https://stackoverflow.com/questions/51701512/how-to-change-the-color-of-active-t
     border-top: 4px solid #40A758;
     z-index: -1;
     margin-top: 0;
+    padding-top: 4px;
 }
 
 .nav-tabs .nav-item a:after {
@@ -98,6 +101,7 @@ https://stackoverflow.com/questions/51701512/how-to-change-the-color-of-active-t
     border-right: 1px solid black;
     margin-top: 0;
     border-bottom: 1px solid white;
+    padding-top: 4px;
 }
    
 
