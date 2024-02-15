@@ -56,6 +56,8 @@
                 aria-current="page" type="button" href="{% url 'account_logout' %}">Logout <i
                     class="fa-solid fa-arrow-right-from-bracket"></i></a>
 
+            <p id="logged-in-status" class="text-center fw-bold">Currently logged in as {{ user }}</p>
+
             {% endif %}
             
         </div>
