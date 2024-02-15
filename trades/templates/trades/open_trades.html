@@ -32,9 +32,9 @@
                         <td class="hide-on-mobile align-middle">{{ trade.position }}</td>
                         <td class="align-middle">{{ trade.trade_amount }}</td>
                         <td>
-                            <button type="button" class="btn btn-outline-dark btn-sm me-1 action-button"
+                            <a type="button" class="btn btn-outline-dark btn-sm me-1 action-button"
                                 href="{% url 'view_trade' trade.id %}" data-bs-toggle="modal"
-                                data-bs-target="#selectedTrade{{ trade.id }}">View</button>
+                                data-bs-target="#selectedTrade{{ trade.id }}">View</a>
 
                             <!-- The modal below will be displayed when the user clicks on the 'View'
                             button, it contains additional relevant details related to the trade, including
