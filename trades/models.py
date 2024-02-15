@@ -88,6 +88,7 @@ class Trade(models.Model):
 
     class Meta:
         ordering = ["date_opened"]
+    
 
     def __str__(self):
         return f'{self.date_opened} {self.position} {self.ticker} {self.trade_amount}'

@@ -10,10 +10,9 @@ class TradeDetailsForm(forms.ModelForm):
     class Meta:
         model = Trade
 
-        fields = ['trader', 'ticker', 'date_opened', 'trade_amount', 'opening_price', 'position', 'trade_status', 'broker', 'closing_price', 'date_closed']
+        fields = ['ticker', 'date_opened', 'trade_amount', 'opening_price', 'position', 'trade_status', 'broker', 'closing_price', 'date_closed']
 
         labels = {
-            'trader': 'Trader',
             'ticker': 'Ticker',
             'date_opened': 'Date opened',
             'trade_amount': 'Trade amount $',
@@ -27,7 +26,6 @@ class TradeDetailsForm(forms.ModelForm):
 
 
         widgets = {
-        'trader': forms.Select(attrs={'class': 'form-control'}),
         'ticker': forms.Select(attrs={'class': 'form-control'}),
         'date_opened': forms.DateInput(attrs={'class': 'form-control','placeholder':'Only YYYY-MM-DD format accepted'}),
         'position': forms.Select(attrs={'class': 'form-control'}),

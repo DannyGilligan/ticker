@@ -21,8 +21,9 @@ def all_trades(request):
     the all_trades.html template to display the
     requested information to the user when rendered.
     """
+    user = request.user
     return render(request, 'trades/all_trades.html', {
-        'trades': Trade.objects.all()
+        'trades': Trade.objects.filter(trader=user)
     })
 
 
@@ -33,8 +34,9 @@ def open_trades(request):
     the open_trades.html template to display the
     requested information to the user when rendered.
     """
+    user = request.user
     return render(request, 'trades/open_trades.html', {
-        'open_trades': Trade.objects.filter(trade_status="OPEN")
+        'open_trades': Trade.objects.filter(trader=user, trade_status="OPEN")
     })
 
 
@@ -45,8 +47,9 @@ def closed_trades(request):
     the closed_trades.html template to display the
     requested information to the user when rendered.
     """
+    user = request.user
     return render(request, 'trades/closed_trades.html', {
-        'closed_trades': Trade.objects.filter(trade_status="CLOSED")
+        'closed_trades': Trade.objects.filter(trader=user, trade_status="CLOSED")
     })
 
 
@@ -72,7 +75,7 @@ def add_trade_details(request):
     if request.method == 'POST':
         form = TradeDetailsForm(request.POST) 
         if form.is_valid():
-            new_trader = form.cleaned_data['trader']
+            new_trader = request.user
             new_ticker = form.cleaned_data['ticker']
             new_date_opened = form.cleaned_data['date_opened']
             new_trade_amount = form.cleaned_data['trade_amount']
@@ -84,7 +87,7 @@ def add_trade_details(request):
             new_date_closed = form.cleaned_data['date_closed']
 
             new_trade = Trade(
-                trader=new_trader,
+                trader=request.user,
                 ticker=new_ticker,
                 date_opened=new_date_opened,
                 trade_amount=new_trade_amount,

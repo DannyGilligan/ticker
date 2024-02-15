@@ -76,14 +76,6 @@
                     <li class="nav-item mx-2">
                         <a class="nav-link fw-bold text-wrap {% if request.path == logout_url %}active{% endif %}" aria-current="page" style="color: orange;" href="{% url 'account_logout' %}">Logout <i class="fa-solid fa-arrow-right-from-bracket"></i></a>
                     </li>
-                    {% else %}
-                    <li class="nav-item mx-2">
-                        <a class="nav-link fw-bold text-wrap {% if request.path == signup_url %}active{% endif %}" aria-current="page"
-                            href="{% url 'account_signup' %}" style="color: black;">Register</a>
-                    </li>
-                    <li class="nav-item mx-2">
-                        <a class="nav-link fw-bold text-wrap {% if request.path == login_url %}active{% endif %}" aria-current="page" href="{% url 'account_login' %}" style="color: black;">Login</a>
-                    </li>
                     {% endif %}
                 </ul>
             </div>
