@@ -30,7 +30,8 @@ SECRET_KEY = os.environ.get("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-dannygilligan-ticker-1zdnd4atlfm.ws-eu108.gitpod.io','.herokuapp.com']
+ALLOWED_HOSTS = ['8000-dannygilligan-ticker-1zdnd4atlfm.ws-eu108.gitpod.io',
+                 '.herokuapp.com']
 
 
 # Application definition
@@ -106,7 +107,6 @@ CSRF_TRUSTED_ORIGINS = [
     "https://*.gitpod.io",
     "https://*.herokuapp.com"
 ]
-
 
 
 # Password validation

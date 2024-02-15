@@ -7,6 +7,8 @@ from .models import Trade
 from .forms import TradeDetailsForm
 
 # Create your views here.
+
+
 def index(request):
     """
     Renders the default home page
@@ -49,7 +51,8 @@ def closed_trades(request):
     """
     user = request.user
     return render(request, 'trades/closed_trades.html', {
-        'closed_trades': Trade.objects.filter(trader=user, trade_status="CLOSED")
+        'closed_trades': Trade.objects.filter(trader=user,
+                                              trade_status="CLOSED")
     })
 
 
@@ -58,7 +61,7 @@ def view_trade(request, id):
     return HttpeResponseDirect(reverse('index'))
 
 
-# The add_trade_details code below was adapted from a Django crash 
+# The add_trade_details code below was adapted from a Django crash
 # course tutorial published by YouTube channel 'Bob's Programming Academy"
 # link: https://youtu.be/EUMpUUXKvP0?si=BM8WFT2mUgI9I0sI
 
@@ -73,7 +76,7 @@ def add_trade_details(request):
     user allowing them to enter valid details.
     """
     if request.method == 'POST':
-        form = TradeDetailsForm(request.POST) 
+        form = TradeDetailsForm(request.POST)
         if form.is_valid():
             new_trader = request.user
             new_ticker = form.cleaned_data['ticker']
@@ -107,7 +110,7 @@ def add_trade_details(request):
         })
 
 
-# The edit_trade code below was adapted from a Django crash 
+# The edit_trade code below was adapted from a Django crash
 # course tutorial published by YouTube channel 'Bob's Programming Academy"
 # link: https://youtu.be/EUMpUUXKvP0?si=BM8WFT2mUgI9I0sI
 
@@ -117,14 +120,14 @@ def edit_trade(request, id):
     The edit_trade view will allow the user to pass
     cleaned data through the TradeDetailsForm and save the
     data, the form will be rendered with the trade data related to the
-    selected trade already populated in the form fields (the trade id 
-    primary key is used here to achieve this). Once the updated 
+    selected trade already populated in the form fields (the trade id
+    primary key is used here to achieve this). Once the updated
     data is accepted, the user will be directed to a confirmation
     screen informing them that the trade has been updated successfully.
     If the data was invalid, the form will be rendered again to the
     user allowing them to enter valid details.
     """
-    if request.method =='POST':
+    if request.method == 'POST':
         trade = Trade.objects.get(pk=id)
         form = TradeDetailsForm(request.POST, instance=trade)
         if form.is_valid():
