@@ -12,13 +12,19 @@ caption {
 }
 
 
-#tradeModal {
+#tradeModal1 {
 width: 100%;
 text-align: center;
 background-color: black;
 color: white;
 }
 
+#tradeModal2 {
+    width: 100%;
+    text-align: center;
+    background-color: black;
+    color: white;
+    }
 
 
 
