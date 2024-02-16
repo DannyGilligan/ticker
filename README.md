@@ -363,7 +363,7 @@ The application offers user registration and log in functionality using Django's
 </td></tr>
 <tr><td Colspan="2">
 
-![Tracker Panel](trades/static/documentation/features_01_registration(a).webp)
+![Screenshot](trades/static/documentation/features_01_registration(a).webp)
 
 </td></tr>
 
@@ -374,7 +374,7 @@ A notification is also displayed to the user alerting them to their log in statu
 </td></tr>
 <tr><td Colspan="2">
 
-![Tracker Panel](trades/static/documentation/features_01_registration(b).webp)
+![Screenshot](trades/static/documentation/features_01_registration(b).webp)
 
 </td></tr>
 </table>
@@ -394,7 +394,7 @@ A simple, easy to use Navbar has been implemented for the site, utilising Bootst
 </td></tr>
 <tr><td Colspan="2">
 
-![Question Container](trades/static/documentation/features_02_navbar.webp)
+![Screenshot](trades/static/documentation/features_02_navbar.webp)
 
 </td></tr>
 </table>
@@ -414,7 +414,7 @@ Ticker allows user to add the details of their trades to the database by clickin
 </td></tr>
 <tr><td Colspan="2">
 
-![Choice Container](trades/static/documentation/features_03_add_trade(a).webp)
+![Screenshot](trades/static/documentation/features_03_add_trade(a).webp)
 
 </td></tr>
 
@@ -427,7 +427,7 @@ To note, the date field must be populated in the format YYYY-MM-DD or else the f
 </td></tr>
 <tr><td Colspan="2">
 
-![Choice Container](trades/static/documentation/features_03_add_trade(b).webp)
+![Screenshot](trades/static/documentation/features_03_add_trade(b).webp)
 
 </td></tr>
 
@@ -438,7 +438,7 @@ A confirmation will be disaplyed to the user once the details have been successf
 </td></tr>
 <tr><td Colspan="2">
 
-![Choice Container](trades/static/documentation/features_03_add_trade(c).webp)
+![Screenshot](trades/static/documentation/features_03_add_trade(c).webp)
 
 </td></tr>
 </table>
@@ -459,7 +459,7 @@ The user can view all open trades on their Ticker account by clicking on the 'Vi
 </td></tr>
 <tr><td Colspan="2">
 
-![Main Button](trades/static/documentation/features_04_view_open_trades(a).webp)
+![Screenshot](trades/static/documentation/features_04_view_open_trades(a).webp)
 
 </td></tr>
 
@@ -470,7 +470,7 @@ All open trades currently available on the user's account will then be displayed
 </td></tr>
 <tr><td Colspan="2">
 
-![Main Button](trades/static/documentation/features_04_view_open_trades(b).webp)
+![Screenshot](trades/static/documentation/features_04_view_open_trades(b).webp)
 
 </td></tr>
 </table>  
@@ -490,7 +490,7 @@ The user can view all closed trades on their Ticker account by clicking on the '
 </td></tr>
 <tr><td Colspan="2">
 
-![Main Button](trades/static/documentation/features_05_view_closed_trades(b).webp)
+![Screenshot](trades/static/documentation/features_05_view_closed_trades(b).webp)
 
 </td></tr>
 
@@ -501,7 +501,7 @@ All closed trades currently available on the user's Ticker account will then be 
 </td></tr>
 <tr><td Colspan="2">
 
-![Main Button](trades/static/documentation/features_05_view_closed_trades(a).webp)
+![Screenshot](trades/static/documentation/features_05_view_closed_trades(a).webp)
 
 </td></tr>
 </table> 
@@ -522,7 +522,7 @@ The user can view all trades on their Ticker account by clicking on the 'View Al
 </td></tr>
 <tr><td Colspan="2">
 
-![Main Button](trades/static/documentation/features_06_view_all_trades(a).webp)
+![Screenshot](trades/static/documentation/features_06_view_all_trades(a).webp)
 
 </td></tr>
 
@@ -533,7 +533,7 @@ All trades currently available on the user's Ticker account will then be display
 </td></tr>
 <tr><td Colspan="2">
 
-![Main Button](trades/static/documentation/features_06_view_all_trades(b).webp)
+![Screenshot](trades/static/documentation/features_06_view_all_trades(b).webp)
 
 </td></tr>
 </table>
@@ -553,7 +553,7 @@ The user can view the details for a specific trade by clicking on the 'View' but
 </td></tr>
 <tr><td Colspan="2">
 
-![Main Button](trades/static/documentation/features_07_view_trade_details(a).webp)
+![Screenshot](trades/static/documentation/features_07_view_trade_details(a).webp)
 
 </td></tr>
 
@@ -564,7 +564,7 @@ A Bootstrap modal component will then display all stored details related to the 
 </td></tr>
 <tr><td Colspan="2">
 
-![Main Button](trades/static/documentation/features_07_view_trade_details(b).webp)
+![Screenshot](trades/static/documentation/features_07_view_trade_details(b).webp)
 
 </td></tr>
 </table>
@@ -584,7 +584,7 @@ The user can edit/update the details for a specific trade by clicking on the 'Ed
 </td></tr>
 <tr><td Colspan="2">
 
-![Main Button](trades/static/documentation/features_08_edit_trade(a).webp)
+![Screenshot](trades/static/documentation/features_08_edit_trade(a).webp)
 
 </td></tr>
 
@@ -595,7 +595,7 @@ A form page will then be displayed to the user, allowing them to update any of t
 </td></tr>
 <tr><td Colspan="2">
 
-![Main Button](trades/static/documentation/features_08_edit_trade(b).webp)
+![Screenshot](trades/static/documentation/features_08_edit_trade(b).webp)
 
 </td></tr>
 
@@ -606,7 +606,7 @@ A confirmation will then be displayed to the user, informing them that the updat
 </td></tr>
 <tr><td Colspan="2">
 
-![Main Button](trades/static/documentation/features_08_edit_trade(c).webp)
+![Screenshot](trades/static/documentation/features_08_edit_trade(c).webp)
 
 </td></tr>
 </table>
@@ -626,7 +626,7 @@ The user can delete a specific trade by clicking on the 'Delete' button on the r
 </td></tr>
 <tr><td Colspan="2">
 
-![Main Button](trades/static/documentation/features_09_delete_trade(a).webp)
+![Screenshot](trades/static/documentation/features_09_delete_trade(a).webp)
 
 </td></tr>
 
@@ -637,7 +637,7 @@ A CSS/Javascript Bootstrap modal component will then be displayed to the user re
 </td></tr>
 <tr><td Colspan="2">
 
-![Main Button](trades/static/documentation/features_09_delete_trade(b).webp)
+![Screenshot](trades/static/documentation/features_09_delete_trade(b).webp)
 
 </td></tr>
 
@@ -648,7 +648,7 @@ A confirmation will then be displayed to the user, informing them that the delet
 </td></tr>
 <tr><td Colspan="2">
 
-![Main Button](trades/static/documentation/features_09_delete_trade(c).webp)
+![Screenshot](trades/static/documentation/features_09_delete_trade(c).webp)
 
 </td></tr>
 </table>
@@ -784,15 +784,104 @@ The user stories relating to this MVP version of Ticker are outlined below.
 </tr>
 <!-- spacer -->
 </table>
-
-[Back to User Stories](#user-stories)
-<br>
-<br>
-<br>
-
 </details>
+
+
+[Back to Top](#ticker)
+<br>
+<br>
+<br>
+
+
 <!-- 'As a User' User Stories end here -->
 
 
 
+<!----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- BUGS SECTION -->
+## Bugs 
+
+
+
+<details>
+  <summary><b>Unresolved Bugs</b></summary>
+<br>
+
+<details>
+  <summary> Open Trades Template HTML Validation</summary>
+<br>
+An error was returned on the HTML validation for the Open Trades template, this error relates to a Bootstrap modal and will be ignored.
+<br><br>
+<table>
+<tr><td><b>Open Trades Template HTML Validation</b></td><td><b>Status</b></td></th></tr>
+
+<tr><td>
+
+![Bug](trades/static/documentation/unresolved_bug_1_open_trades.webp)
+
+</td><td>:x:</td>
+</tr>
+</table>
+<br>
+</details>
+<!-- spacer -->
+<details>
+  <summary>Closed Trades Template HTML Validation</summary>
+<br>
+An error was returned on the HTML validation for the Closed Trades template, this error relates to a Bootstrap modal and will be ignored.
+<br><br>
+<table>
+<tr><td><b>Closed Trades Template HTML Validation</b></td><td><b>Status</b></td></th></tr>
+
+<tr><td>
+
+![Bug](trades/static/documentation/unresolved_bug_2_closed_trades.webp)
+
+</td><td>:x:</td>
+</tr>
+</table>
+<br>
+</details>
+<!-- spacer -->
+<details>
+  <summary>All Trades Template HTML Validation</summary>
+<br>
+An error was returned on the HTML validation for the All Trades template, this error relates to a Bootstrap modal and will be ignored.
+<br><br>
+<table>
+<tr><td><b>All Trades Template HTML Validation</b></td><td><b>Status</b></td></th></tr>
+
+<tr><td>
+
+![Bug](trades/static/documentation/unresolved_bug_3_all_trades.webp)
+
+</td><td>:x:</td>
+</tr>
+</table>
+<br>
+</details>
+<details>
+  <summary>Edit Template HTML Validation</summary>
+<br>
+An error was returned on the HTML validation for the Edit Trade template, this error relates to the Django Money package and will be ignored.
+<br><br>
+<table>
+<tr><td><b>Edit Template HTML Validation</b></td><td><b>Status</b></td></th></tr>
+
+<tr><td>
+
+![Bug](trades/static/documentation/unresolved_bug_4_edit_trade.webp)
+
+</td><td>:x:</td>
+</tr>
+</table>
+<br>
+</details>
+<!-- spacer -->
+</details>
+
+
+[Back to Top](#fifa-2023-womens-world-cup-quiz)
+<br>
+<br>
+<br>
 
