@@ -1142,7 +1142,7 @@ The custom code used in the project passed through HTML and CSS validation, and 
 
 ## Deployment
 
-The app was deployed as a Minimum Viable Product using the ![Heroku](https://www.heroku.com) platform and ![ElephantSQL](https://www.elephantsql.com/).
+The app was deployed as a Minimum Viable Product using the [Heroku](https://www.heroku.com) platform and [ElephantSQL](https://www.elephantsql.com/).
 
 <details>
   <summary><b>The steps for Heroku deployment are outlined here</b></summary>
