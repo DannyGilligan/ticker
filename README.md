@@ -1335,6 +1335,7 @@ Click on the View button once the deployment process completes to launch app.
 
 </td>
 </table>
+</details>
 
 <details>
   <summary> Step 2</summary>
@@ -1348,7 +1349,7 @@ Click on the View button once the deployment process completes to launch app.
 
 </td>
 </table>
-
+</details>
 <details>
   <summary> Step 3</summary>
 <br>
@@ -1361,7 +1362,7 @@ Click on the View button once the deployment process completes to launch app.
 
 </td>
 </table>
-
+</details>
 <details>
   <summary> Step 4</summary>
 <br>
@@ -1374,7 +1375,7 @@ Click on the View button once the deployment process completes to launch app.
 
 </td>
 </table>
-
+</details>
 <details>
   <summary> Step 5</summary>
 <br>
@@ -1387,7 +1388,7 @@ Click on the View button once the deployment process completes to launch app.
 
 </td>
 </table>
-
+</details>
 <details>
   <summary> Step 6</summary>
 <br>
@@ -1400,7 +1401,7 @@ Click on the View button once the deployment process completes to launch app.
 
 </td>
 </table>
-
+</details>
 
 <details>
   <summary> Step 7</summary>
@@ -1414,7 +1415,7 @@ Click on the View button once the deployment process completes to launch app.
 
 </td>
 </table>
-
+</details>
 <details>
   <summary> Step 8</summary>
 <br>
@@ -1427,6 +1428,7 @@ Click on the View button once the deployment process completes to launch app.
 
 </td>
 </table>
+</details>
 
 The live link to the app is https://ticker-aefd70a6f705.herokuapp.com/
 
