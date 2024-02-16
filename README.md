@@ -5,8 +5,8 @@
 ## Table of Contents
 
 * [Introduction](#introduction)
-* [Features](#features)
 * [Design](#design)
+* [Features](#features)
 * [User Stories](#user-stories)
 * [Bugs](#bugs)
 * [Manual Testing](#manual-testing)
@@ -168,8 +168,6 @@ The colours used throughout the application were chosen with the intention to en
 </details>
 
 
-
-
 <details>
   <summary> <b>View Trade</b></summary>
 <br>
@@ -299,7 +297,13 @@ The colours used throughout the application were chosen with the intention to en
 </table>
 </details>
 <br>
+</details>
+<br>
 
+[Back to Top](#ticker)
+<br>
+<br>
+<br>
 
 
 <!-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- FEATURES SECTION -->
