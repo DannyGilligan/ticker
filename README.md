@@ -297,7 +297,7 @@ The colours used throughout the application were chosen with the intention to en
 </table>
 </details>
 <br>
-
+</details>
 
 <details>
   <summary><b>Trade Model ERD </b></summary>
@@ -311,10 +311,9 @@ The colours used throughout the application were chosen with the intention to en
 
 </td>
 </tr>
+</table>
 </details>
 
-
-</details>
 
 [Back to Top](#ticker)
 <br>
