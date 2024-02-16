@@ -1437,3 +1437,89 @@ The live link to the app is https://ticker-aefd70a6f705.herokuapp.com/
 <br>
 <br>
 <br>
+
+
+
+
+
+## Credits
+<br>
+<details>
+  <summary><b>Reference Materials Used</b></summary>
+<br>
+
+<table>
+<tr><th><b> Description </b></th><th><b> Link </b></th></tr>
+<!-- Reference Material 1 begins -->
+<tr><td> Code Institute README.md Tutorial, by Kasia Bogucka </td>
+<td> 
+
+[here](https://www.youtube.com/watch?v=l1DE7L-4eKQ)  
+
+</td></tr>
+<!-- Reference Material 1 ends -->
+<tr><td> Portfolio Project 4: The guide to MVP, by Kasia Bogucka </td>
+<td> 
+
+[here](https://www.youtube.com/watch?v=vIv1c6RLBac)  
+
+</td></tr>
+<!-- Spacer -->
+<tr><td> Guide on code validation, by Lane-Sawyer Thompson & Matt Rudge </td>
+<td> 
+
+[here](https://www.youtube.com/watch?v=wiqAvRCheKo)  
+
+</td></tr>
+<!-- Spacer -->
+
+<tr><td> Developing with Django LMS content, published by Code Institute </td>
+<td> 
+
+[here](https://codeinstitute.net/nl/)  
+
+</td></tr>
+<!-- Spacer -->
+<tr><td> Python Django 4 Crash Course For Beginners, by YouTube Channel 'Bob's Programming Academy </td>
+<td> 
+
+[here](https://www.youtube.com/watch?v=EUMpUUXKvP0&t=120s)  
+
+</td></tr>
+<!-- Spacer -->
+<tr><td> Community Q&A: PP4 Project FAQ's , by Lane-Sawyer Thompson and Lucy Rush </td>
+<td> 
+
+[here](https://www.youtube.com/watch?v=GmWHhAGvaQA)  
+
+</td></tr>
+<!-- Spacer -->
+<tr><td> How To Add Calculated Fields To Models , by YouTube Channel Codemy.com</td>
+<td> 
+
+[here](https://www.youtube.com/watch?v=GmWHhAGvaQA)  
+
+</td></tr>
+<!-- Spacer -->
+<tr><td> Secret Key generator site, Djecrety.ir</td>
+<td> 
+
+[here](https://djecrety.ir/)  
+
+</td></tr>
+<!-- Spacer -->
+<tr><td> Django documentation, djangoproject.com</td>
+<td> 
+
+[here](https://docs.djangoproject.com)  
+
+</td></tr>
+<!-- Spacer -->
+
+
+
+</table>
+<br>
+<br>
+<br>
+</details>
