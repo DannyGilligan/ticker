@@ -47,7 +47,7 @@ An overview of the key features that have been implemented for this project is s
 
 <br>
 <details>
-  <summary> Customised Logo</summary>
+  <summary> <b>Customised Logo</b></summary>
 <br>
 <table>
 <!-- <tr><th>Customised Logo</th></tr> -->
@@ -68,7 +68,7 @@ A custom logo has been designed for Ticker, the logo is simple and clear. It als
 
 <!-- Feature 1 ends -->
 <details>
-  <summary> User Login and Registration</summary>
+  <summary> <b>User Login and Registration</b></summary>
 <br>
 <table>
 <!-- <tr><th> <b>User Log In and Registration</b> </th></tr> -->
@@ -99,7 +99,7 @@ A notification is also disaplyed to the user alerting them to their log in statu
 <!-- spacer -->
 
 <details>
-  <summary> Navbar</summary>
+  <summary> <b>Navbar</b></summary>
 <br>
 <table>
 <!-- <tr><th> <b>Site Navbar</b> </th></tr> -->
@@ -119,7 +119,7 @@ A simple, easy to use Navbar has been implemented for the site, utilising Bootst
 <!-- spacer -->
 
 <details>
-  <summary> Add Trade</summary>
+  <summary> <b>Add Trade</b></summary>
 <br>
 <table>
 <!-- <tr><th> <b>Add Trade</b> </th></tr> -->
@@ -163,7 +163,7 @@ A confirmation will be disaplyed to the user once the details have been successf
 <!-- spacer -->
 
 <details>
-  <summary> View Open Trades</summary>
+  <summary> <b>View Open Trades</b></summary>
 <br>
 <table>
 <!-- <tr><th> <b>View Open Trades</b> </th></tr> -->
@@ -193,7 +193,7 @@ All open trades currently available on the user's account will then be displayed
 
 <!-- spacer -->
 <details>
-  <summary> View Closed Trades</summary>
+  <summary> <b>View Closed Trades</b></summary>
 <br>
 <table>
 <tr><td>
@@ -222,7 +222,7 @@ All closed trades currently available on the user's Ticker account will then be 
 
 <!-- spacer -->
 <details>
-  <summary> View All Trades</summary>
+  <summary> <b>View All Trades</b></summary>
 <br>
 <table>
 <tr><th> <b>View All Trades</b> </th></tr>
