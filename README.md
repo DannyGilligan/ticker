@@ -65,7 +65,7 @@ A custom logo has been designed for Ticker, the logo is simple and clear. It als
 </td></tr>
 </table>
 </details>
-
+<br>
 <!-- Feature 1 ends -->
 <details>
   <summary> <b>User Login and Registration</b></summary>
@@ -95,7 +95,7 @@ A notification is also displayed to the user alerting them to their log in statu
 </td></tr>
 </table>
 </details>
-
+<br>
 <!-- spacer -->
 
 <details>
@@ -115,7 +115,7 @@ A simple, easy to use Navbar has been implemented for the site, utilising Bootst
 </td></tr>
 </table>
 </details>
-
+<br>
 <!-- spacer -->
 
 <details>
@@ -159,7 +159,7 @@ A confirmation will be disaplyed to the user once the details have been successf
 </td></tr>
 </table>
 </details>
-
+<br>
 <!-- spacer -->
 
 <details>
@@ -190,8 +190,9 @@ All open trades currently available on the user's account will then be displayed
 </td></tr>
 </table>  
 </details>
-
+<br>
 <!-- spacer -->
+
 <details>
   <summary> <b>View Closed Trades</b></summary>
 <br>
@@ -219,8 +220,9 @@ All closed trades currently available on the user's Ticker account will then be 
 </td></tr>
 </table>  
 </details>
-
+<br>
 <!-- spacer -->
+
 <details>
   <summary> <b>View All Trades</b></summary>
 <br>
@@ -249,8 +251,39 @@ All trades currently available on the user's Ticker account will then be display
 </td></tr>
 </table>  
 </details>
-
+<br>
 <!-- spacer -->
+
+<details>
+  <summary> <b>View Trade Details</b></summary>
+<br>
+<table>
+<tr><td>
+<br>
+The user can view the details for a specific trade by clicking on the 'View' button on the relevant row.
+<br><br>
+</td></tr>
+<tr><td Colspan="2" align="center">
+
+![Main Button](trades/static/documentation/features_07_view_trade_details(a).webp)
+
+</td></tr>
+
+<tr><td>
+<br>
+A Bootstrap modal component will then display all stored details related to the trade, this includes fields that are automatically calculated by the custom 'Trade' model in models.py. The calculated fields are highlighted below.
+<br><br>
+</td></tr>
+<tr><td Colspan="2" align="center">
+
+![Main Button](trades/static/documentation/features_07_view_trade_details(b).webp)
+
+</td></tr>
+</table>  
+</details>
+<br>
+<!-- spacer -->
+
 <br>
 <table>
 <tr><th> <b>Goals Scored</b> </th></tr>
