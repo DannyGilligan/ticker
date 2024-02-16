@@ -49,7 +49,7 @@ The colours used throughout the application were chosen with the intention to en
 <table>
 <tr><th>Colour Scheme</th></tr>
 
-<tr><td align="center">
+<tr><td>
 
 ![color scheme](trades/static/documentation/ticker-color-scheme.webp)
 
@@ -74,7 +74,7 @@ The colours used throughout the application were chosen with the intention to en
 <table>
 
 <tr>
-<td align="center">
+<td>
 
 ![wireframe](trades/static/documentation/wireframe_1_registration(1).webp)
 
@@ -82,7 +82,7 @@ The colours used throughout the application were chosen with the intention to en
 </tr>
 
 <tr>
-<td align="center">
+<td>
 
 ![wireframe](trades/static/documentation/wireframe_1_registration(2).webp)
 
@@ -90,7 +90,7 @@ The colours used throughout the application were chosen with the intention to en
 </tr>
 
 <tr>
-<td align="center">
+<td>
 
 ![wireframe](trades/static/documentation/wireframe_1_registration(3).webp)
 
@@ -107,7 +107,7 @@ The colours used throughout the application were chosen with the intention to en
 <table>
 
 <tr>
-<td align="center">
+<td>
 
 ![wireframe](trades/static/documentation/wireframe_2_login(1).webp)
 
@@ -115,7 +115,7 @@ The colours used throughout the application were chosen with the intention to en
 </tr>
 
 <tr>
-<td align="center">
+<td>
 
 ![wireframe](trades/static/documentation/wireframe_2_login(2).webp)
 
@@ -123,7 +123,7 @@ The colours used throughout the application were chosen with the intention to en
 </tr>
 
 <tr>
-<td align="center">
+<td>
 
 ![wireframe](trades/static/documentation/wireframe_2_login(3).webp)
 
@@ -141,7 +141,7 @@ The colours used throughout the application were chosen with the intention to en
 <table>
 
 <tr>
-<td align="center">
+<td>
 
 ![wireframe](trades/static/documentation/wireframe_3_add_trade(1).webp)
 
@@ -149,7 +149,7 @@ The colours used throughout the application were chosen with the intention to en
 </tr>
 
 <tr>
-<td align="center">
+<td>
 
 ![wireframe](trades/static/documentation/wireframe_3_add_trade(2).webp)
 
@@ -157,7 +157,7 @@ The colours used throughout the application were chosen with the intention to en
 </tr>
 
 <tr>
-<td align="center">
+<td>
 
 ![wireframe](trades/static/documentation/wireframe_3_add_trade(3).webp)
 
@@ -174,7 +174,7 @@ The colours used throughout the application were chosen with the intention to en
 <table>
 
 <tr>
-<td align="center">
+<td>
 
 ![wireframe](trades/static/documentation/wireframe_4_view_trade(1).webp)
 
@@ -182,7 +182,7 @@ The colours used throughout the application were chosen with the intention to en
 </tr>
 
 <tr>
-<td align="center">
+<td>
 
 ![wireframe](trades/static/documentation/wireframe_4_view_trade(2).webp)
 
@@ -190,7 +190,7 @@ The colours used throughout the application were chosen with the intention to en
 </tr>
 
 <tr>
-<td align="center">
+<td>
 
 ![wireframe](trades/static/documentation/wireframe_4_view_trade(3).webp)
 
@@ -208,7 +208,7 @@ The colours used throughout the application were chosen with the intention to en
 <table>
 
 <tr>
-<td align="center">
+<td>
 
 ![wireframe](trades/static/documentation/wireframe_5_edit_trade(1).webp)
 
@@ -216,7 +216,7 @@ The colours used throughout the application were chosen with the intention to en
 </tr>
 
 <tr>
-<td align="center">
+<td>
 
 ![wireframe](trades/static/documentation/wireframe_5_edit_trade(2).webp)
 
@@ -224,7 +224,7 @@ The colours used throughout the application were chosen with the intention to en
 </tr>
 
 <tr>
-<td align="center">
+<td>
 
 ![wireframe](trades/static/documentation/wireframe_5_edit_trade(3).webp)
 
@@ -233,7 +233,7 @@ The colours used throughout the application were chosen with the intention to en
 
 
 <tr>
-<td align="center">
+<td>
 
 ![wireframe](trades/static/documentation/wireframe_5_edit_trade(4).webp)
 
@@ -242,7 +242,7 @@ The colours used throughout the application were chosen with the intention to en
 
 
 <tr>
-<td align="center">
+<td>
 
 ![wireframe](trades/static/documentation/wireframe_5_edit_trade(5).webp)
 
@@ -261,7 +261,7 @@ The colours used throughout the application were chosen with the intention to en
 <table>
 
 <tr>
-<td align="center">
+<td>
 
 ![wireframe](trades/static/documentation/wireframe_6_delete_trade(1).webp)
 
@@ -269,7 +269,7 @@ The colours used throughout the application were chosen with the intention to en
 </tr>
 
 <tr>
-<td align="center">
+<td>
 
 ![wireframe](trades/static/documentation/wireframe_6_delete_trade(2).webp)
 
@@ -277,7 +277,7 @@ The colours used throughout the application were chosen with the intention to en
 </tr>
 
 <tr>
-<td align="center">
+<td>
 
 ![wireframe](trades/static/documentation/wireframe_6_delete_trade(3).webp)
 
@@ -286,7 +286,7 @@ The colours used throughout the application were chosen with the intention to en
 
 
 <tr>
-<td align="center">
+<td>
 
 ![wireframe](trades/static/documentation/wireframe_6_delete_trade(4).webp)
 
@@ -305,7 +305,7 @@ The colours used throughout the application were chosen with the intention to en
 <table>
 
 <tr>
-<td align="center">
+<td>
 
 ![erd](trades/static/documentation/model_erd.webp)
 
@@ -392,7 +392,7 @@ A notification is also displayed to the user alerting them to their log in statu
 A simple, easy to use Navbar has been implemented for the site, utilising Bootstraps CSS and Javascript components, along with some custom styling.
 <br><br>
 </td></tr>
-<tr><td Colspan="2"  align="center">
+<tr><td Colspan="2">
 
 ![Question Container](trades/static/documentation/features_02_navbar.webp)
 
@@ -412,7 +412,7 @@ A simple, easy to use Navbar has been implemented for the site, utilising Bootst
 Ticker allows user to add the details of their trades to the database by clicking on the 'Add Trade' button.
 <br><br>
 </td></tr>
-<tr><td Colspan="2" align="center">
+<tr><td Colspan="2">
 
 ![Choice Container](trades/static/documentation/features_03_add_trade(a).webp)
 
@@ -425,7 +425,7 @@ A form is then displayed to the user allowing them to enter the details relevant
 To note, the date field must be populated in the format YYYY-MM-DD or else the form submission will fail and the form will be reset and redisplayed to the user.
 <br><br>
 </td></tr>
-<tr><td Colspan="2" align="center">
+<tr><td Colspan="2">
 
 ![Choice Container](trades/static/documentation/features_03_add_trade(b).webp)
 
@@ -436,7 +436,7 @@ To note, the date field must be populated in the format YYYY-MM-DD or else the f
 A confirmation will be disaplyed to the user once the details have been successfully added to the database.
 <br><br>
 </td></tr>
-<tr><td Colspan="2" align="center">
+<tr><td Colspan="2">
 
 ![Choice Container](trades/static/documentation/features_03_add_trade(c).webp)
 
@@ -457,7 +457,7 @@ A confirmation will be disaplyed to the user once the details have been successf
 The user can view all open trades on their Ticker account by clicking on the 'View Open Trades' button.
 <br><br>
 </td></tr>
-<tr><td Colspan="2" align="center">
+<tr><td Colspan="2">
 
 ![Main Button](trades/static/documentation/features_04_view_open_trades(a).webp)
 
@@ -468,7 +468,7 @@ The user can view all open trades on their Ticker account by clicking on the 'Vi
 All open trades currently available on the user's account will then be displayed in tabular form (utilising Bootstraps CSS and Javascript responsive components).
 <br><br>
 </td></tr>
-<tr><td Colspan="2" align="center">
+<tr><td Colspan="2">
 
 ![Main Button](trades/static/documentation/features_04_view_open_trades(b).webp)
 
@@ -488,7 +488,7 @@ All open trades currently available on the user's account will then be displayed
 The user can view all closed trades on their Ticker account by clicking on the 'View Open Trades' button.
 <br><br>
 </td></tr>
-<tr><td Colspan="2" align="center">
+<tr><td Colspan="2">
 
 ![Main Button](trades/static/documentation/features_05_view_closed_trades(b).webp)
 
@@ -499,7 +499,7 @@ The user can view all closed trades on their Ticker account by clicking on the '
 All closed trades currently available on the user's Ticker account will then be displayed in tabular form (utilising Bootstraps CSS and Javascript responsive components).
 <br><br>
 </td></tr>
-<tr><td Colspan="2" align="center">
+<tr><td Colspan="2">
 
 ![Main Button](trades/static/documentation/features_05_view_closed_trades(a).webp)
 
@@ -520,7 +520,7 @@ All closed trades currently available on the user's Ticker account will then be 
 The user can view all trades on their Ticker account by clicking on the 'View All Trades' button.
 <br><br>
 </td></tr>
-<tr><td Colspan="2" align="center">
+<tr><td Colspan="2">
 
 ![Main Button](trades/static/documentation/features_06_view_all_trades(a).webp)
 
@@ -531,7 +531,7 @@ The user can view all trades on their Ticker account by clicking on the 'View Al
 All trades currently available on the user's Ticker account will then be displayed in tabular form (utilising Bootstraps CSS and Javascript responsive components).
 <br><br>
 </td></tr>
-<tr><td Colspan="2" align="center">
+<tr><td Colspan="2">
 
 ![Main Button](trades/static/documentation/features_06_view_all_trades(b).webp)
 
@@ -551,7 +551,7 @@ All trades currently available on the user's Ticker account will then be display
 The user can view the details for a specific trade by clicking on the 'View' button on the relevant row.
 <br><br>
 </td></tr>
-<tr><td Colspan="2" align="center">
+<tr><td Colspan="2">
 
 ![Main Button](trades/static/documentation/features_07_view_trade_details(a).webp)
 
@@ -562,7 +562,7 @@ The user can view the details for a specific trade by clicking on the 'View' but
 A Bootstrap modal component will then display all stored details related to the trade, this includes fields that are automatically calculated by the custom 'Trade' model in models.py. The calculated fields are highlighted below.
 <br><br>
 </td></tr>
-<tr><td Colspan="2" align="center">
+<tr><td Colspan="2">
 
 ![Main Button](trades/static/documentation/features_07_view_trade_details(b).webp)
 
@@ -582,7 +582,7 @@ A Bootstrap modal component will then display all stored details related to the 
 The user can edit/update the details for a specific trade by clicking on the 'Edit' button on the relevant row.
 <br><br>
 </td></tr>
-<tr><td Colspan="2" align="center">
+<tr><td Colspan="2">
 
 ![Main Button](trades/static/documentation/features_08_edit_trade(a).webp)
 
@@ -593,7 +593,7 @@ The user can edit/update the details for a specific trade by clicking on the 'Ed
 A form page will then be displayed to the user, allowing them to update any of the non-calculated fields in the model. Once the changes are entered, the user can then click on the 'save changes' button, or 'cancel'.
 <br><br>
 </td></tr>
-<tr><td Colspan="2" align="center">
+<tr><td Colspan="2">
 
 ![Main Button](trades/static/documentation/features_08_edit_trade(b).webp)
 
@@ -604,7 +604,7 @@ A form page will then be displayed to the user, allowing them to update any of t
 A confirmation will then be displayed to the user, informing them that the update was successful.
 <br><br>
 </td></tr>
-<tr><td Colspan="2" align="center">
+<tr><td Colspan="2">
 
 ![Main Button](trades/static/documentation/features_08_edit_trade(c).webp)
 
@@ -624,7 +624,7 @@ A confirmation will then be displayed to the user, informing them that the updat
 The user can delete a specific trade by clicking on the 'Delete' button on the relevant row.
 <br><br>
 </td></tr>
-<tr><td Colspan="2" align="center">
+<tr><td Colspan="2">
 
 ![Main Button](trades/static/documentation/features_09_delete_trade(a).webp)
 
@@ -635,7 +635,7 @@ The user can delete a specific trade by clicking on the 'Delete' button on the r
 A CSS/Javascript Bootstrap modal component will then be displayed to the user requesting confirmation of the deletion, the user can decide to delete by clicking on the 'Yes, delete' button, or cancel by clicking on 'No, cancel'.
 <br><br>
 </td></tr>
-<tr><td Colspan="2" align="center">
+<tr><td Colspan="2">
 
 ![Main Button](trades/static/documentation/features_09_delete_trade(b).webp)
 
@@ -646,7 +646,7 @@ A CSS/Javascript Bootstrap modal component will then be displayed to the user re
 A confirmation will then be displayed to the user, informing them that the deletion was successful.
 <br><br>
 </td></tr>
-<tr><td Colspan="2" align="center">
+<tr><td Colspan="2">
 
 ![Main Button](trades/static/documentation/features_09_delete_trade(c).webp)
 
@@ -655,7 +655,7 @@ A confirmation will then be displayed to the user, informing them that the delet
 <br> 
 <br>
 </details>
-
+<br>
 </details>
 <!-- The Existing Features section ends here -->
 
@@ -726,6 +726,72 @@ The admin panel in this MVP version offers basic functionality, in the next upda
 <br>
 <br>
 <!-- Features ends here -->
+
+
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ USER STORIES SECTION -->
+## User Stories 
+
+
+The user stories relating to this MVP version of Ticker are outlined below.
+<br>
+<!-- 'As a user' User Stories are shown below -->
+<details>
+  <summary><b>As a User</b></summary>
+<br>
+<table>
+<tr>
+<th>User Story</th><th>Result</th>
+</tr>
+<!-- User Story 1 begins -->
+<tr>
+<td>As a user, I can register an account with Ticker</td><td>:heavy_check_mark:</td>
+</tr>
+<!-- User Story 1 ends -->
+<tr>
+<td>As a user, I can use my registered account details to log in securely to TIcker</td><td>:heavy_check_mark:</td>
+</tr>
+<!-- spacer -->
+<tr>
+<td>As a user, I am provided with a simple, easy to use navbar for site navigation</td><td>:heavy_check_mark:</td>
+</tr>
+<!-- spacer -->
+<tr>
+<td>As a user, I can easily add a new trade to my Ticker account</td><td>:heavy_check_mark:</td>
+</tr>
+<!-- spacer -->
+<tr>
+<td>As a user, I can easily view and access all open trades in my Ticker account</td><td>:heavy_check_mark:</td>
+</tr>
+<!-- spacer -->
+<tr>
+<td>As a user, I can easily view and access all closed trades in my Ticker account</td><td>:heavy_check_mark:</td>
+</tr>
+<!-- spacer -->
+<tr>
+<td>As a user, I can easily view and access all trades in my Ticker account from a single screen</td><td>:heavy_check_mark:</td>
+</tr>
+<!-- spacer -->
+<tr>
+<td>As a user, I can easily view the expanded trade details for a specific trade</td><td>:heavy_check_mark:</td>
+</tr>
+<!-- spacer -->
+<tr>
+<td>As a user, I can easily edit the details previously entered for a specific trade</td><td>:heavy_check_mark:</td>
+</tr>
+<!-- spacer -->
+<tr>
+<td>As a user, I can easily delete a trade from my Ticker account, and cancel the deletion process for committing to it</td><td>:heavy_check_mark:</td>
+</tr>
+<!-- spacer -->
+</table>
+
+[Back to User Stories](#user-stories)
+<br>
+<br>
+<br>
+
+</details>
+<!-- 'As a User' User Stories end here -->
 
 
 
