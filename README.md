@@ -1102,7 +1102,7 @@ Delete Trade
 Superuser access to admin panel
 </td>
 <td>
-1 Enter /admin/ to url and access admin panel
+1 Add /admin/ to url and access admin panel
 <br>
 2 Enter superuser credentials
 <br>
@@ -1121,9 +1121,20 @@ Superuser access to admin panel
 
 </details>
 
+
+<details>
+  <summary><b>Code Validation</b></summary>
+<br>
+The custom code used in the project passed through HTML and CSS validation, and the custom Python code passed through the Code Institute Python Linter. However, several HTML errors were returned relating to Bootstrap and Django Money. These have been documented in the 'Unresolved Bugs' section.
+</details>
+
+
+
+
 [Back to Top](#ticker)
 <br>
 <br>
 <br>
 
 <!-- Manual Testing section ends here -->
+
