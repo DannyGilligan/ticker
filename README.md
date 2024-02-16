@@ -1,6 +1,6 @@
 # Ticker
 
-![Ticker Logo](trades/static/documentation/readme-hero.webp)
+![Ticker Logo](trades/static/documentation/ticker-readme-hero.webp)
 
 ## Table of Contents
 
