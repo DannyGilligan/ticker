@@ -44,9 +44,13 @@ An overview of the key features that have been implemented for this project is s
 <details>
   <summary> <b>Existing Features</b> </summary>
 <!-- Feature 1 begins -->
+
+<br>
+<details>
+  <summary> Customised Logo</summary>
 <br>
 <table>
-<tr><th> <b> Customised Logo</b></th></tr>
+<!-- <tr><th>Customised Logo</th></tr> -->
 <tr>
 <td>
 <br>
@@ -60,10 +64,14 @@ A custom logo has been designed for Ticker, the logo is simple and clear. It als
 
 </td></tr>
 </table>
+</details>
+
 <!-- Feature 1 ends -->
+<details>
+  <summary> User Login and Registration</summary>
 <br>
 <table>
-<tr><th> <b>User Log In and Registration</b> </th></tr>
+<!-- <tr><th> <b>User Log In and Registration</b> </th></tr> -->
 <tr><td>
 <br>
 The application offers user registration and log in functionality using Django's allauth package.
@@ -86,12 +94,15 @@ A notification is also disaplyed to the user alerting them to their log in statu
 
 </td></tr>
 </table>
+</details>
 
 <!-- spacer -->
 
+<details>
+  <summary> Navbar</summary>
 <br>
 <table>
-<tr><th> <b>Site Navbar</b> </th></tr>
+<!-- <tr><th> <b>Site Navbar</b> </th></tr> -->
 <tr><td>
 <br>
 A simple, easy to use Navbar has been implemented for the site, utilising Bootstraps CSS and Javascript components, along with some custom styling.
@@ -103,12 +114,15 @@ A simple, easy to use Navbar has been implemented for the site, utilising Bootst
 
 </td></tr>
 </table>
+</details>
 
 <!-- spacer -->
 
+<details>
+  <summary> Add Trade</summary>
 <br>
 <table>
-<tr><th> <b>Add Trade</b> </th></tr>
+<!-- <tr><th> <b>Add Trade</b> </th></tr> -->
 <tr><td>
 <br>
 Ticker allows user to add the details of their trades to the database by clicking on the 'Add Trade' button.
@@ -144,12 +158,15 @@ A confirmation will be disaplyed to the user once the details have been successf
 
 </td></tr>
 </table>
+</details>
 
 <!-- spacer -->
 
+<details>
+  <summary> View Open Trades</summary>
 <br>
 <table>
-<tr><th> <b>View Open Trades</b> </th></tr>
+<!-- <tr><th> <b>View Open Trades</b> </th></tr> -->
 <tr><td>
 <br>
 The user can view all open trades on their Ticker account by clicking on the 'View Open Trades' button.
@@ -172,11 +189,13 @@ All open trades currently available on the user's account will then be displayed
 
 </td></tr>
 </table>  
+</details>
 
 <!-- spacer -->
+<details>
+  <summary> View Closed Trades</summary>
 <br>
 <table>
-<tr><th> <b>View Closed Trades</b> </th></tr>
 <tr><td>
 <br>
 The user can view all closed trades on their Ticker account by clicking on the 'View Open Trades' button.
@@ -199,8 +218,11 @@ All closed trades currently available on the user's Ticker account will then be 
 
 </td></tr>
 </table>  
+</details>
 
 <!-- spacer -->
+<details>
+  <summary> View All Trades</summary>
 <br>
 <table>
 <tr><th> <b>View All Trades</b> </th></tr>
@@ -226,6 +248,7 @@ All trades currently available on the user's Ticker account will then be display
 
 </td></tr>
 </table>  
+</details>
 
 <!-- spacer -->
 <br>
