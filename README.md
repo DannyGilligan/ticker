@@ -86,7 +86,9 @@ A notification is also disaplyed to the user alerting them to their log in statu
 
 </td></tr>
 </table>
+
 <!-- spacer -->
+
 <br>
 <table>
 <tr><th> <b>Site Navbar</b> </th></tr>
@@ -95,13 +97,15 @@ A notification is also disaplyed to the user alerting them to their log in statu
 A simple, easy to use Navbar has been implemented for the site, utilising Bootstraps CSS and Javascript components, along with some custom styling.
 <br><br>
 </td></tr>
-<tr><td Colspan="2">
+<tr><td Colspan="2"  align="center">
 
 ![Question Container](trades/static/documentation/features_02_navbar.webp)
 
 </td></tr>
 </table>
+
 <!-- spacer -->
+
 <br>
 <table>
 <tr><th> <b>Add Trade</b> </th></tr>
@@ -110,7 +114,7 @@ A simple, easy to use Navbar has been implemented for the site, utilising Bootst
 Ticker allows user to add the details of their trades to the database by clicking on the 'Add Trade' button.
 <br><br>
 </td></tr>
-<tr><td Colspan="2">
+<tr><td Colspan="2" align="center">
 
 ![Choice Container](trades/static/documentation/features_03_add_trade(a).webp)
 
@@ -123,7 +127,7 @@ A form is then displayed to the user allowing them to enter the details relevant
 To note, the date field must be populated in the format YYYY-MM-DD or else the form submission will fail and the form will be reset and redisplayed to the user.
 <br><br>
 </td></tr>
-<tr><td Colspan="2">
+<tr><td Colspan="2" align="center">
 
 ![Choice Container](trades/static/documentation/features_03_add_trade(b).webp)
 
@@ -134,25 +138,37 @@ To note, the date field must be populated in the format YYYY-MM-DD or else the f
 A confirmation will be disaplyed to the user once the details have been successfully added to the database.
 <br><br>
 </td></tr>
-<tr><td Colspan="2">
+<tr><td Colspan="2" align="center">
 
 ![Choice Container](trades/static/documentation/features_03_add_trade(c).webp)
 
 </td></tr>
 </table>
+
 <!-- spacer -->
+
 <br>
 <table>
-<tr><th> <b>Main Button</b> </th></tr>
+<tr><th> <b>View Open Trades</b> </th></tr>
 <tr><td>
-The user interaction with the quiz is enabled through a simple button that has contextual commands associated with it depending on what screen is currently displayed. The focus is on making the quiz easy to use and accessible.
+The user can view all open trades on their Ticker account by clicking on the 'View Open' button.
 </td></tr>
-<tr><td Colspan="2">
+<tr><td Colspan="2" align="center">
 
-![Main Button](assets/documentation/features05_main_button.webp)
+![Main Button](trades/static/documentation/features_04_view_open_trades(a).webp)
+
+</td></tr>
+
+<tr><td>
+All open trades currently available on the user's account will then be displayed in tabular form (utilising Bootstraps CSS and Javascript responsive components).
+</td></tr>
+<tr><td Colspan="2" align="center">
+
+![Main Button](trades/static/documentation/features_04_view_open_trades(b).webp)
 
 </td></tr>
 </table>  
+
 <!-- spacer -->
 <br>
 <table>
