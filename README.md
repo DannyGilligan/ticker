@@ -329,127 +329,93 @@ A confirmation will then be displayed to the user, informing them that the updat
 </details>
 
 <!-- spacer -->
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+<details>
+  <summary> <b>Delete Trade</b></summary>
 <br>
 <table>
-<tr><th> <b>Goals Scored</b> </th></tr>
 <tr><td>
-A tracker will be visible on the bottom right hand corner of the screen during the quiz that will display the 'Goals Scored' by the user.
-</td></tr>
-<tr><td Colspan="2">
-
-![Goals Scored](assets/documentation/features08_goals_scored.webp)  
-
-</td></tr>
-</table>  
-<!-- spacer -->
 <br>
-<table>
-<tr><th> <b>On Hover Changes</b> </th></tr>
-<tr><td>
-Any items on the screen that the user can interact with will display a subtle colour change on the box shadow when hovered over to convey that the item can be interacted with by tapping or clicking on it.
+The user can delete a specific trade by clicking on the 'Delete' button on the relevant row.
+<br><br>
 </td></tr>
-<tr><td Colspan="2">
+<tr><td Colspan="2" align="center">
 
-![On Hover](assets/documentation/features09_hover_change.webp)
+![Main Button](trades/static/documentation/features_09_delete_trade(a).webp)
+
+</td></tr>
+
+<tr><td>
+<br>
+A CSS/Javascript Bootstrap modal component will then be displayed to the user requesting confirmation of the deletion, the user can decide to delete by clicking on the 'Yes, delete' button, or cancel by clicking on 'No, cancel'.
+<br><br>
+</td></tr>
+<tr><td Colspan="2" align="center">
+
+![Main Button](trades/static/documentation/features_09_delete_trade(b).webp)
+
+</td></tr>
+
+<tr><td>
+<br>
+A confirmation will then be displayed to the user, informing them that the deletion was successful.
+<br><br>
+</td></tr>
+<tr><td Colspan="2" align="center">
+
+![Main Button](trades/static/documentation/features_09_delete_trade(c).webp)
 
 </td></tr>
 </table>
-<!-- spacer -->
-<br>
-<table>
-<tr><th Colspan="2"> <b>Answer Feedback</b> </th></tr>
-<tr><td Colspan="2">
-The Answer Feedback feature provides the user with instant feedback after submitting their answers. An image depicting players in various stages of celebration or desolation are displayed to the user along with a 'MISS!' or 'GOAL!' text caption. 
-</td></tr>
-<tr><td> <i>Miss!</i> </td><td> <i>Goal!</i> </td></tr>
-
-<tr>
-<td>
-
-![Before Use](assets/documentation/features10_answer_feedback_1.webp)
-
-</td>
-<td>
-
-![After Use](assets/documentation/features10_answer_feedback_2.webp)
-
-</td>
-</tr>
-</table>  
-<!-- spacer -->
-<br>
-<table>
-<tr><th> <b>No Option Selected Alert</b> </th></tr>
-<tr><td>
-The No Option Selected Alert feature provides the user with prominent and immediate feedback if they attempt to answer a question without selecting a choice first. This alert will stay on screen for the duration of the current question being asked, and will be removed automatically for the next question.
-</td></tr>
-<tr><td>
-
-![Official Font](assets/documentation/features11_no_option_alert.webp)
-
-</td></tr>
-</table>  
-<!-- spacer -->
-
-
-[Back to Features](#features)
-<br>
-<br>
-<br>
+<br> 
 </details>
+
 <!-- The Existing Features section ends here -->
+
 <!-- The Future Features section is shown below, this will be disaplyed in a collapsible format, with each item shown in tabular form -->
 <details>
   <summary> <b>Future Features</b></summary>
 <br>
 <!-- Future Feature 1 begins -->
 <table>
-<tr><th><b>Substitution</b></th></tr>
+<tr><th><b>Polygon.io API Integration</b></th></tr>
 <tr><td>
-This feature will allow the user to swap out the question and choice set displayed on screen for another set, this may provide them with a question that they may be able to answer instead. This would possibly involve adding a new 'Substitutes' property to the quizEngine object that would contain the alternative questions and choices values, a function would then change the inner HTML of the containers accordingly once called.
+The overarching goal of this project is to create an application that will include real time market data, this will greatly enhance the user experience and value proposition of Ticker. Access to a suitable API can be expensive, however, https://polygon.io/ offers a reasonably priced API that offers real time access to US stock market data. This will be included in the next update to this project.
 </td></tr>
 </table>
 <!-- Future Feature 1 ends -->
 <br>
 <table>
-<tr><th><b>Match Timer</b></th></tr>
+<tr><th><b>Django AllAuth Styling</b></th></tr>
 <tr><td>
-This feature will add a timer to the quiz with a time limit of perhaps 11 minutes, with subtle on screen hints at different checkpoints (e.g "half-time approaching", "approaching the final minute", "we're in injury time"). This would run 'asynchronously' and when it reaches 'full-time', the quiz would end regardless of the user's progression.
+Currently the allauth functionality, allowing users to register and log in to the application, is presented with the default styling. This is not a good user experience and will be upgraded in the next update.
 </td></tr>
 </table>
 <!-- spacer -->
 <br>
 <table>
-<tr><th><b>Home or Away Kit Toggle</b></th></tr>
+<tr><th><b>Stock Model</b></th></tr>
 <tr><td>
-This will toggle the colour scheme of the quiz to dark or light modes which will enhance the user experience and aid accessibility.
+In this MVP version of the application, the user can choose from a selection of 10 popular stocks, this was included as a 'proof  of concept'. In the next update, a specific model will be created to cover all stocks covered by the polygon.io API (there are several thousand individual stocks covered, it was not feasible to include them all in this version of TIcker before the deployment deadline)
 </td></tr>
 </table>
 <br>
 <!-- spacer -->
 <table>
-<tr><th><b>Bonus Facts</b></th></tr>
+<tr><th><b>Broker Model</b></th></tr>
 <tr><td>
-Initially I wanted to include bonus facts containing bite size pieces of information about the tournament and women's football in general, these would have been displayed in the container along with the 'GOAL!' or 'MISS!' feedback. It will be added in a future update instead.
+A dedicated model will also be created for Brokers, this will cover as many of the online brokers currently available on the market, with all relevant details captured.
 </td></tr>
 </table>
 <!-- spacer -->
 <br>
 <table>
-<tr><th><b>Hall of Fame</b></th></tr>
+<tr><th><b>Aggregation and Annotation</b></th></tr>
 <tr><td>
-This feature will create a leaderboard to store user scores, adding a competitive dimension to the quiz and perhaps promote sharing, replayibilty and increase enjoyment.
+In the next update, the application will leverage the aggregation and annotation functionalities of Django to provide the user with more useful details regarding their portfolio (e.g, total capital, total profit/loss, profit/loss by stock etc)
 </td></tr>
 </table>
 <!-- spacer -->
-<br>
-<table>
-<tr><th><b>Custom Radio Inputs</b></th></tr>
-<tr><td>
-The project has been deployed with standard/default radio inputs, however these will have customised styling in a future update.
-</td></tr>
-</table>
 
 [Back to Features](#features)
 <br>
