@@ -287,6 +287,48 @@ A Bootstrap modal component will then display all stored details related to the 
 </details>
 
 <!-- spacer -->
+
+<details>
+  <summary> <b>View Trade Details</b></summary>
+<br>
+<table>
+<tr><td>
+<br>
+The user can view the details for a specific trade by clicking on the 'View' button on the relevant row.
+<br><br>
+</td></tr>
+<tr><td Colspan="2" align="center">
+
+![Main Button](trades/static/documentation/features_07_view_trade_details(a).webp)
+
+</td></tr>
+
+<tr><td>
+<br>
+A Bootstrap modal component will then display all stored details related to the trade, this includes fields that are automatically calculated by the custom 'Trade' model in models.py. The calculated fields are highlighted below.
+<br><br>
+</td></tr>
+<tr><td Colspan="2" align="center">
+
+![Main Button](trades/static/documentation/features_07_view_trade_details(b).webp)
+
+</td></tr>
+
+<tr><td>
+<br>
+A confirmation will then be displayed to the user, informing them that the update was successful.
+<br><br>
+</td></tr>
+<tr><td Colspan="2" align="center">
+
+![Main Button](trades/static/documentation/features_07_view_trade_details(c).webp)
+
+</td></tr>
+</table>
+<br> 
+</details>
+
+<!-- spacer -->
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 <br>
 <table>
