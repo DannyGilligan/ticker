@@ -49,7 +49,9 @@ An overview of the key features that have been implemented for this project is s
 <tr><th> <b> Customised Logo</b></th></tr>
 <tr>
 <td>
+<br>
 A custom logo has been designed for Ticker, the logo is simple and clear. It also includes a green 'candlestick' symbol that will be instantly recognisable to the target audience and aims communicate the intended use of the application.
+<br>
 </td>
 </tr>
 <tr><td Colspan="2">
@@ -63,7 +65,9 @@ A custom logo has been designed for Ticker, the logo is simple and clear. It als
 <table>
 <tr><th> <b>User Log In and Registration</b> </th></tr>
 <tr><td>
+<br>
 The application offers user registration and log in functionality using Django's allauth package.
+<br>
 </td></tr>
 <tr><td Colspan="2">
 
@@ -72,7 +76,9 @@ The application offers user registration and log in functionality using Django's
 </td></tr>
 
 <tr><td>
+<br>
 A notification is also disaplyed to the user alerting them to their log in status.
+<br>
 </td></tr>
 <tr><td Colspan="2">
 
