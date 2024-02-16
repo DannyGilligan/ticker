@@ -906,15 +906,15 @@ Several manual tests were performed across different devices, browsers and code 
 Register user account
 </td>
 <td>
-Click on register button
+1 Click on register button
 <br>
-Enter valid username in Django Allauth
+2 Enter valid username in Django Allauth
 <br>
-Enter valid password in Django Allauth
+3 Enter valid password in Django Allauth
 <br>
-Confirm valid password in Django Allauth
+4 Confirm valid password in Django Allauth
 <br>
-Use registered details to log in
+5 Use registered details to log in
 </td>
 <td>:heavy_check_mark:</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td></tr>
 
@@ -922,16 +922,16 @@ Use registered details to log in
 
 <tr>
 <td>
-Return user login
+Returning user login
 </td>
 <td>
-Click on Login button
+1 Click on Login button
 <br>
-Enter valid username in Django Allauth
+2 Enter valid username in Django Allauth
 <br>
-Enter valid password in Django Allauth
+3 Enter valid password in Django Allauth
 <br>
-Proceed to home page successfully
+4 Proceed to home page successfully
 </td>
 <td>:heavy_check_mark:</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td></tr>
 
@@ -940,37 +940,37 @@ Proceed to home page successfully
 Site navigation
 </td>
 <td>
-Use menu button on home screen to add trade
+1 Use menu button on home screen to add trade
 <br>
-Use menu button on home screen to view home screen
+2 Use menu button on home screen to view home screen
 <br>
-Use menu button on home screen to view open trades
+3 Use menu button on home screen to view open trades
 <br>
-Use menu button on home screen to view closed trades
+4 Use menu button on home screen to view closed trades
 <br>
-Use menu button on home screen to view all trades
+5 Use menu button on home screen to view all trades
 <br>
-Use menu button on home screen to log out
+6 Use menu button on home screen to log out
 <br>
-Use link on navbar to view home screen
+7 Use link on navbar to view home screen
 <br>
-Use link on navbar to view open trades
+8 Use link on navbar to view open trades
 <br>
-Use link on navbar to view closed trades
+9 Use link on navbar to view closed trades
 <br>
-Use link on navbar to view all trades
+10 Use link on navbar to view all trades
 <br>
-Use link on navbar to log out
+11 Use link on navbar to log out
 <br>
-Use hamburger menu link to view home screen
+12 Use hamburger menu link to view home screen
 <br>
-Use hamburger menu link to view open trades
+13 Use hamburger menu link to view open trades
 <br>
-Use hamburger menu link to view closed trades
+14 Use hamburger menu link to view closed trades
 <br>
-Use hamburger menu link to view all trades
+15 Use hamburger menu link to view all trades
 <br>
-Use hamburger menu link to logout
+16 Use hamburger menu link to logout
 </td>
 <td>:heavy_check_mark:</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td></tr>
 
@@ -979,19 +979,19 @@ Use hamburger menu link to logout
 Add trade
 </td>
 <td>
-Click on 'Add Trade+' button
+1 Click on 'Add Trade+' button
 <br>
-Add trade template is displayed correctly
+2 Add trade template is displayed correctly
 <br>
-Add trade form is displayed correctly
+3 Add trade form is displayed correctly
 <br>
-All fields accept user inputs correctly
+4 All fields accept user inputs correctly
 <br>
-Form validation behaves as expected
+5 Form validation behaves as expected
 <br>
-Click on 'Add Trade" button after inputting details
+6 Click on 'Add Trade" button after inputting details
 <br>
-'Trade added successfully' template is displayed correctly
+7 'Trade added successfully' template is displayed correctly
 </td>
 <td>:heavy_check_mark:</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td></tr>
 
@@ -1000,13 +1000,13 @@ Click on 'Add Trade" button after inputting details
 View Open Trades
 </td>
 <td>
-Click on 'View Open Trades' button 
+1 Click on 'View Open Trades' button 
 <br>
-Open Trades template is displayed correctly
+2 Open Trades template is displayed correctly
 <br>
-Only open trades related to the authenticated user are displayed
+3 Only open trades related to the authenticated user are displayed
 <br>
-Responsive Bootstrap table displaying trades behaves as expected
+4 Responsive Bootstrap table displaying trades behaves as expected
 </td>
 <td>:heavy_check_mark:</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td></tr>
 
@@ -1015,13 +1015,13 @@ Responsive Bootstrap table displaying trades behaves as expected
 View Closed Trades
 </td>
 <td>
-Click on 'View Closed Trades' button 
+1 Click on 'View Closed Trades' button 
 <br>
-Closed Trades template is displayed correctly
+2 Closed Trades template is displayed correctly
 <br>
-Only closed trades related to the authenticated user are displayed
+3 Only closed trades related to the authenticated user are displayed
 <br>
-Responsive Bootstrap table displaying trades behaves as expected
+4 Responsive Bootstrap table displaying trades behaves as expected
 </td>
 <td>:heavy_check_mark:</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td></tr>
 
@@ -1030,13 +1030,13 @@ Responsive Bootstrap table displaying trades behaves as expected
 View All Trades
 </td>
 <td>
-Click on 'View All Trades' button 
+1 Click on 'View All Trades' button 
 <br>
-All Trades template is displayed correctly
+2 All Trades template is displayed correctly
 <br>
-Only trades related to the authenticated user are displayed
+3 Only trades related to the authenticated user are displayed
 <br>
-Responsive Bootstrap table displaying trades behaves as expected
+4 Responsive Bootstrap table displaying trades behaves as expected
 </td>
 <td>:heavy_check_mark:</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td></tr>
 
@@ -1045,13 +1045,13 @@ Responsive Bootstrap table displaying trades behaves as expected
 View Trade Details
 </td>
 <td>
-Click on 'View' button on selected trade from table row
+1 Click on 'View' button on selected trade from table row
 <br>
-Responsive Bootstrap modal is displayed correctly
+2 Responsive Bootstrap modal is displayed correctly
 <br>
-All expanded trade details are displayed correctly with valid data
+3 All expanded trade details are displayed correctly with valid data
 <br>
-Close button dismisses modal correcly
+4 Close button dismisses modal correcly
 </td>
 <td>:heavy_check_mark:</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td></tr>
 
@@ -1060,23 +1060,23 @@ Close button dismisses modal correcly
 Edit Trade Details
 </td>
 <td>
-Click on 'Edit' button on selected trade from table row
+1 Click on 'Edit' button on selected trade from table row
 <br>
-Edit Trade template is displayed correctly
+2 Edit Trade template is displayed correctly
 <br>
-Navbar active tab is displayed correctly
+3 Navbar active tab is displayed correctly
 <br>
-Edit Trade form is displayed correctly
+4 Edit Trade form is displayed correctly
 <br>
-Edit form is populated with previously entered data
+5 Edit form is populated with previously entered data
 <br>
-Edit form fields accept user inputs
+6 Edit form fields accept user inputs
 <br>
-Cancel button behaves correctly
+7 Cancel button behaves correctly
 <br>
-Save changes button behaves correctly
+8 Save changes button behaves correctly
 <br>
-Trade updated successfully template is displayed successfully
+9 Trade updated successfully template is displayed successfully
 </td>
 <td>:heavy_check_mark:</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td></tr>
 
@@ -1085,15 +1085,15 @@ Trade updated successfully template is displayed successfully
 Delete Trade
 </td>
 <td>
-Click on 'Delete' button on selected trade from table row
+1 Click on 'Delete' button on selected trade from table row
 <br>
-Responsive Bootstrap modal is displayed correctly
+2 Responsive Bootstrap modal is displayed correctly
 <br>
-'No, cancel' button behaves correctly
+3 'No, cancel' button behaves correctly
 <br>
-'Yes, delete' button behaves correctly
+4 'Yes, delete' button behaves correctly
 <br>
-Trade deleted successfully confirmation is displayed successfully
+5 Trade deleted successfully confirmation is displayed successfully
 </td>
 <td>:heavy_check_mark:</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td></tr>
 
@@ -1102,13 +1102,13 @@ Trade deleted successfully confirmation is displayed successfully
 Superuser access to admin panel
 </td>
 <td>
-Enter /admin/ to url and access admin panel
+1 Enter /admin/ to url and access admin panel
 <br>
-Enter superuser credentials
+2 Enter superuser credentials
 <br>
-Admin panel is displayed correctly
+3 Admin panel is displayed correctly
 <br>
-Individual trades are displayed correctly in human readable format
+4 Individual trades are displayed correctly in human readable format
 </td>
 <td>:heavy_check_mark:</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td></tr>
 
