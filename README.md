@@ -51,7 +51,7 @@ An overview of the key features that have been implemented for this project is s
 <td>
 <br>
 A custom logo has been designed for Ticker, the logo is simple and clear. It also includes a green 'candlestick' symbol that will be instantly recognisable to the target audience and aims communicate the intended use of the application.
-<br>
+<br><br>
 </td>
 </tr>
 <tr><td Colspan="2">
@@ -67,35 +67,35 @@ A custom logo has been designed for Ticker, the logo is simple and clear. It als
 <tr><td>
 <br>
 The application offers user registration and log in functionality using Django's allauth package.
-<br>
+<br><br>
 </td></tr>
 <tr><td Colspan="2">
 
-![Tracker Panel](trades/static/documentation/features_01_registration(a).JPG)
+![Tracker Panel](trades/static/documentation/features_01_registration(a).webp)
 
 </td></tr>
 
 <tr><td>
 <br>
 A notification is also disaplyed to the user alerting them to their log in status.
-<br>
+<br><br>
 </td></tr>
 <tr><td Colspan="2">
 
-![Tracker Panel](trades/static/documentation/features_01_registration(b).JPG)
+![Tracker Panel](trades/static/documentation/features_01_registration(b).webp)
 
 </td></tr>
 </table>
 <!-- spacer -->
 <br>
 <table>
-<tr><th> <b>Question Container</b> </th></tr>
+<tr><th> <b>Site Navbar</b> </th></tr>
 <tr><td>
-The question container takes up a prominent space on the screen and clearly displays the text to the user, the high contrast allows for easy readibility and accessibilty.
+A simple, easy to use Navbar has been implemented for the site, utilising Bootstraps CSS and Javascript components, along with some custom styling.
 </td></tr>
 <tr><td Colspan="2">
 
-![Question Container](assets/documentation/features03_question_container.webp)
+![Question Container](trades/static/documentation/features_02_navbar.webp)
 
 </td></tr>
 </table>
