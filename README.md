@@ -1138,3 +1138,189 @@ The custom code used in the project passed through HTML and CSS validation, and 
 
 <!-- Manual Testing section ends here -->
 
+
+
+## Deployment
+
+The app was deployed as a Minimum Viable Product using the Heroku platform (https://www.heroku.com) and ElephantSQL (https://www.elephantsql.com/).
+
+<details>
+  <summary><b>The steps for deployment are outlined here</b></summary>
+<br>
+
+<!-- spacer -->
+<details>
+  <summary> Step 1: Create app</summary>
+<br>
+In the Heroku dashboard, populate the 'App name' field and choose a region. Then click on 'Create app'.
+<br>
+<br>
+<table>
+<tr>
+<td>
+
+![Heroku](trades/static/documentation/heroku_2.webp)
+
+</td>
+</table>
+
+</details>
+<!-- spacer -->
+<details>
+  <summary> Step 2: App setup page</summary>
+<br>
+Once the app is created, the setup page will be displayed. This page contains an overview of the data related to the app. From here, navigate to the 'Settings' tab.
+<br>
+<br>
+<table>
+<tr>
+<td>
+
+![Heroku](trades/static/documentation/heroku_3.webp)
+
+</td>
+</table>
+</details>
+<!-- spacer -->
+<details>
+  <summary> Step 3: Settings</summary>
+<br>
+On the Settings page, click on the 'Reveal Config Vars' button.
+<br>
+<br>
+<table>
+<tr>
+<td>
+
+![Heroku](trades/static/documentation/heroku_3.webp)
+
+</td>
+</table>
+</details>
+<!-- spacer -->
+<details>
+  <summary> Step 4: Config vars</summary>
+<br>
+In the Config Vars, enter DISABLE_COLLECTSTATIC and 1 in the fields as shown below. Then click 'Add'.
+<br>
+<br>
+<table>
+<tr>
+<td>
+
+![Heroku](trades/static/documentation/heroku_3.webp)
+
+</td>
+</table>
+
+</details>
+<!-- spacer -->
+<details>
+  <summary> Step 5: Add Secret Key</summary>
+<br>
+Add your SECRET_KEY to the Config Vars as shown below
+<br>
+<br>
+<table>
+<tr>
+<td>
+
+![Heroku](trades/static/documentation/heroku_4.webp)
+
+</td>
+</table>
+</details>
+<!-- spacer -->
+<details>
+  <summary> Step 6: Navigate to Deploy</summary>
+<br>
+Click on the Deploy Tab
+<br>
+<br>
+<table>
+<tr>
+<td>
+
+![Heroku](trades/static/documentation/heroku_5.webp)
+
+</td>
+</table>
+
+</details>
+<!-- spacer -->
+<details>
+  <summary> Step 7: Connect to Github</summary>
+<br>
+Select Github as the deployment method
+<br>
+<br>
+<table>
+<tr>
+<td>
+
+![Heroku](trades/static/documentation/heroku_6.webp)
+
+</td>
+</table>
+
+</details>
+<!-- spacer -->
+<details>
+  <summary> Step 8: Connect Repository</summary>
+<br>
+Search for your repository, then click Connect
+<br>
+<br>
+<table>
+<tr>
+<td>
+
+![Heroku](trades/static/documentation/heroku_7.webp)
+
+</td>
+</table>
+
+</details>
+<!-- spacer -->
+<details>
+  <summary> Step 9: Deploy Branch</summary>
+<br>
+Select Main as the branch, then click Deploy Branch
+<br>
+<br>
+<table>
+<tr>
+<td>
+
+![Heroku](trades/static/documentation/heroku_8.webp)
+
+</td>
+</table>
+</details>
+<!-- spacer -->
+<details>
+  <summary> Step 10: View App</summary>
+<br>
+Click on the View button once the deployment process completes to launch app.
+<br>
+<br>
+<table>
+<tr>
+<td>
+
+![Heroku](trades/static/documentation/heroku_9.webp)
+
+</td>
+</table>
+
+</details>
+<!-- spacer -->
+
+</details>
+
+The live link to the app is https://ticker-aefd70a6f705.herokuapp.com/
+
+[Back to Top](#ticker)
+<br>
+<br>
+<br>
