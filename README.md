@@ -1142,10 +1142,10 @@ The custom code used in the project passed through HTML and CSS validation, and 
 
 ## Deployment
 
-The app was deployed as a Minimum Viable Product using the Heroku platform (https://www.heroku.com) and ElephantSQL (https://www.elephantsql.com/).
+The app was deployed as a Minimum Viable Product using the ![Heroku](https://www.heroku.com) platform and ![ElephantSQL](https://www.elephantsql.com/).
 
 <details>
-  <summary><b>The steps for deployment are outlined here</b></summary>
+  <summary><b>The steps for Heroku deployment are outlined here</b></summary>
 <br>
 
 <!-- spacer -->
@@ -1317,6 +1317,116 @@ Click on the View button once the deployment process completes to launch app.
 <!-- spacer -->
 
 </details>
+
+<details>
+  <summary><b>The steps for ElephantSQL deployment are outlined here</b></summary>
+<br>
+
+<!-- spacer -->
+<details>
+  <summary> Step 1</summary>
+<br>
+
+<table>
+<tr>
+<td>
+
+![Heroku](trades/static/documentation/elephant_1.webp)
+
+</td>
+</table>
+
+<details>
+  <summary> Step 2</summary>
+<br>
+
+<table>
+<tr>
+<td>
+
+![Heroku](trades/static/documentation/elephant_2.webp)
+
+</td>
+</table>
+
+<details>
+  <summary> Step 3</summary>
+<br>
+
+<table>
+<tr>
+<td>
+
+![Heroku](trades/static/documentation/elephant_3.webp)
+
+</td>
+</table>
+
+<details>
+  <summary> Step 4</summary>
+<br>
+
+<table>
+<tr>
+<td>
+
+![Heroku](trades/static/documentation/elephant_4.webp)
+
+</td>
+</table>
+
+<details>
+  <summary> Step 5</summary>
+<br>
+
+<table>
+<tr>
+<td>
+
+![Heroku](trades/static/documentation/elephant_5.webp)
+
+</td>
+</table>
+
+<details>
+  <summary> Step 6</summary>
+<br>
+
+<table>
+<tr>
+<td>
+
+![Heroku](trades/static/documentation/elephant_6.webp)
+
+</td>
+</table>
+
+
+<details>
+  <summary> Step 7</summary>
+<br>
+
+<table>
+<tr>
+<td>
+
+![Heroku](trades/static/documentation/elephant_7.webp)
+
+</td>
+</table>
+
+<details>
+  <summary> Step 8</summary>
+<br>
+
+<table>
+<tr>
+<td>
+
+![Heroku](trades/static/documentation/elephant_8.webp)
+
+</td>
+</table>
 
 The live link to the app is https://ticker-aefd70a6f705.herokuapp.com/
 
