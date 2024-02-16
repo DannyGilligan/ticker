@@ -91,7 +91,9 @@ A notification is also disaplyed to the user alerting them to their log in statu
 <table>
 <tr><th> <b>Site Navbar</b> </th></tr>
 <tr><td>
+<br>
 A simple, easy to use Navbar has been implemented for the site, utilising Bootstraps CSS and Javascript components, along with some custom styling.
+<br><br>
 </td></tr>
 <tr><td Colspan="2">
 
@@ -102,13 +104,39 @@ A simple, easy to use Navbar has been implemented for the site, utilising Bootst
 <!-- spacer -->
 <br>
 <table>
-<tr><th> <b>Choice Container</b> </th></tr>
+<tr><th> <b>Add Trade</b> </th></tr>
 <tr><td>
-The choices can be selected from easy to use containers utilising radio inputs.
+<br>
+Ticker allows user to add the details of their trades to the database by clicking on the 'Add Trade' button.
+<br><br>
 </td></tr>
 <tr><td Colspan="2">
 
-![Choice Container](assets/documentation/features04_choice_containers.webp)
+![Choice Container](trades/static/documentation/features_03_add_trade(a).webp)
+
+</td></tr>
+
+<tr><td>
+<br>
+A form is then displayed to the user allowing them to enter the details relevant for their trade. This form also includes validation according to the specific fields being populated. It also makes use of the Django Money package to allow the data model to correctly perform the calculations related to money.
+<br>
+To note, the date field must be populated in the format YYYY-MM-DD or else the form submission will fail and the form will be reset and redisplayed to the user.
+<br><br>
+</td></tr>
+<tr><td Colspan="2">
+
+![Choice Container](trades/static/documentation/features_03_add_trade(b).webp)
+
+</td></tr>
+
+<tr><td>
+<br>
+A confirmation will be disaplyed to the user once the details have been successfully added to the database.
+<br><br>
+</td></tr>
+<tr><td Colspan="2">
+
+![Choice Container](trades/static/documentation/features_03_add_trade(c).webp)
 
 </td></tr>
 </table>
