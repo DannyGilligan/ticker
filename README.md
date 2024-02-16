@@ -368,6 +368,7 @@ A confirmation will then be displayed to the user, informing them that the delet
 </td></tr>
 </table>
 <br> 
+<br>
 </details>
 
 </details>
@@ -448,21 +449,261 @@ The admin panel in this MVP version offers basic functionality, in the next upda
 An overview of the key design aspects is included below.
 
 <details>
-  <summary><b> Colour Scheme </b></summary>
+  <summary><b>Colour Scheme </b></summary>
 <br>
-The colours used throughout the application are intended to enhance accessibility and offer clear presentation of the content displayed to the user, while still maintaining visual interest.
-<br>
+The colours used throughout the application were chosen with the intention to enhance accessibility and offer clear presentation of the content displayed to the user, while still maintaining visual interest.
+<br><br>
 <table>
 <tr><th>Colour Scheme</th></tr>
 
 <tr><td align="center">
-<br>
 
-![Coquelicot](trades/static/documentation/ticker-color-scheme.webp)
-<br><br>
+![color scheme](trades/static/documentation/ticker-color-scheme.webp)
+
 </td>
 </tr>
 </table>
 
 
 <!-- Colour Scheme section ends here -->
+
+
+
+
+<details>
+  <summary><b>Wireframes </b></summary>
+<br>
+
+
+<details>
+  <summary> <b>Registration</b></summary>
+<br>
+<table>
+
+<tr>
+<td align="center">
+
+![wireframe](trades/static/documentation/wireframe_1_registration(1).webp)
+
+</td>
+</tr>
+
+<tr>
+<td align="center">
+
+![wireframe](trades/static/documentation/wireframe_1_registration(2).webp)
+
+</td>
+</tr>
+
+<tr>
+<td align="center">
+
+![wireframe](trades/static/documentation/wireframe_1_registration(3).webp)
+
+</td>
+</tr>
+
+</table>
+</details>
+<br>
+
+<details>
+  <summary> <b>Login</b></summary>
+<br>
+<table>
+
+<tr>
+<td align="center">
+
+![wireframe](trades/static/documentation/wireframe_2_login(1).webp)
+
+</td>
+</tr>
+
+<tr>
+<td align="center">
+
+![wireframe](trades/static/documentation/wireframe_2_login(2).webp)
+
+</td>
+</tr>
+
+<tr>
+<td align="center">
+
+![wireframe](trades/static/documentation/wireframe_2_login(3).webp)
+
+</td>
+</tr>
+
+</table>
+</details>
+<br>
+
+
+<details>
+  <summary> <b>Add Trade</b></summary>
+<br>
+<table>
+
+<tr>
+<td align="center">
+
+![wireframe](trades/static/documentation/wireframe_3_add_trade(1).webp)
+
+</td>
+</tr>
+
+<tr>
+<td align="center">
+
+![wireframe](trades/static/documentation/wireframe_3_add_trade(2).webp)
+
+</td>
+</tr>
+
+<tr>
+<td align="center">
+
+![wireframe](trades/static/documentation/wireframe_3_add_trade(3).webp)
+
+</td>
+</tr>
+
+</table>
+</details>
+<br>
+
+
+
+<details>
+  <summary> <b>View Trade</b></summary>
+<br>
+<table>
+
+<tr>
+<td align="center">
+
+![wireframe](trades/static/documentation/wireframe_4_view_trade(1).webp)
+
+</td>
+</tr>
+
+<tr>
+<td align="center">
+
+![wireframe](trades/static/documentation/wireframe_4_view_trade(2).webp)
+
+</td>
+</tr>
+
+<tr>
+<td align="center">
+
+![wireframe](trades/static/documentation/wireframe_4_view_trade(3).webp)
+
+</td>
+</tr>
+
+</table>
+</details>
+<br>
+
+
+
+<details>
+  <summary> <b>Edit Trade</b></summary>
+<br>
+<table>
+
+<tr>
+<td align="center">
+
+![wireframe](trades/static/documentation/wireframe_5_edit_trade(1).webp)
+
+</td>
+</tr>
+
+<tr>
+<td align="center">
+
+![wireframe](trades/static/documentation/wireframe_5_edit_trade(2).webp)
+
+</td>
+</tr>
+
+<tr>
+<td align="center">
+
+![wireframe](trades/static/documentation/wireframe_5_edit_trade(3).webp)
+
+</td>
+</tr>
+
+
+<tr>
+<td align="center">
+
+![wireframe](trades/static/documentation/wireframe_5_edit_trade(4).webp)
+
+</td>
+</tr>
+
+
+<tr>
+<td align="center">
+
+![wireframe](trades/static/documentation/wireframe_5_edit_trade(5).webp)
+
+</td>
+</tr>
+
+
+</table>
+</details>
+<br>
+
+
+<details>
+  <summary> <b>Delete Trade</b></summary>
+<br>
+<table>
+
+<tr>
+<td align="center">
+
+![wireframe](trades/static/documentation/wireframe_6_delete_trade(1).webp)
+
+</td>
+</tr>
+
+<tr>
+<td align="center">
+
+![wireframe](trades/static/documentation/wireframe_6_delete_trade(2).webp)
+
+</td>
+</tr>
+
+<tr>
+<td align="center">
+
+![wireframe](trades/static/documentation/wireframe_6_delete_trade(3).webp)
+
+</td>
+</tr>
+
+
+<tr>
+<td align="center">
+
+![wireframe](trades/static/documentation/wireframe_6_delete_trade(4).webp)
+
+</td>
+</tr>
+
+
+</table>
+</details>
+<br>
