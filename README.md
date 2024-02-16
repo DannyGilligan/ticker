@@ -184,18 +184,45 @@ The user can view all closed trades on their Ticker account by clicking on the '
 </td></tr>
 <tr><td Colspan="2" align="center">
 
-![Main Button](trades/static/documentation/features_05_view_closed_trades(a).webp)
+![Main Button](trades/static/documentation/features_05_view_closed_trades(b).webp)
 
 </td></tr>
 
 <tr><td>
 <br>
-All closed trades currently available on the user's account will then be displayed in tabular form (utilising Bootstraps CSS and Javascript responsive components).
+All closed trades currently available on the user's Ticker account will then be displayed in tabular form (utilising Bootstraps CSS and Javascript responsive components).
 <br><br>
 </td></tr>
 <tr><td Colspan="2" align="center">
 
-![Main Button](trades/static/documentation/features_05_view_closed_trades(b).webp)
+![Main Button](trades/static/documentation/features_05_view_closed_trades(a).webp)
+
+</td></tr>
+</table>  
+
+<!-- spacer -->
+<br>
+<table>
+<tr><th> <b>View All Trades</b> </th></tr>
+<tr><td>
+<br>
+The user can view all trades on their Ticker account by clicking on the 'View All Trades' button.
+<br><br>
+</td></tr>
+<tr><td Colspan="2" align="center">
+
+![Main Button](trades/static/documentation/features_06_view_all_trades(a).webp)
+
+</td></tr>
+
+<tr><td>
+<br>
+All trades currently available on the user's Ticker account will then be displayed in tabular form (utilising Bootstraps CSS and Javascript responsive components).
+<br><br>
+</td></tr>
+<tr><td Colspan="2" align="center">
+
+![Main Button](trades/static/documentation/features_06_view_all_trades(b).webp)
 
 </td></tr>
 </table>  
