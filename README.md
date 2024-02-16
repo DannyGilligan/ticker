@@ -440,3 +440,29 @@ The admin panel in this MVP version offers basic functionality, in the next upda
 <br>
 <br>
 <!-- Features ends here -->
+
+
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- DESIGN SECTION -->
+## Design 
+
+An overview of the key design aspects is included below.
+
+<details>
+  <summary><b> Colour Scheme </b></summary>
+<br>
+The colours used throughout the application are intended to enhance accessibility and offer clear presentation of the content displayed to the user, while still maintaining visual interest.
+<br>
+<table>
+<tr><th>Colour Scheme</th></tr>
+
+<tr><td align="center">
+<br>
+
+![Coquelicot](trades/static/documentation/ticker-color-scheme.webp)
+<br><br>
+</td>
+</tr>
+</table>
+
+
+<!-- Colour Scheme section ends here -->
