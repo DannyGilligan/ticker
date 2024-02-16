@@ -370,6 +370,7 @@ A confirmation will then be displayed to the user, informing them that the delet
 <br> 
 </details>
 
+</details>
 <!-- The Existing Features section ends here -->
 
 <!-- The Future Features section is shown below, this will be disaplyed in a collapsible format, with each item shown in tabular form -->
@@ -412,10 +413,17 @@ A dedicated model will also be created for Brokers, this will cover as many of t
 <table>
 <tr><th><b>Aggregation and Annotation</b></th></tr>
 <tr><td>
-In the next update, the application will leverage the aggregation and annotation functionalities of Django to provide the user with more useful details regarding their portfolio (e.g, total capital, total profit/loss, profit/loss by stock etc)
+In the next update, the application will leverage the aggregation and annotation functionalities of Django to provide the user with more useful details regarding their portfolioe.g, total capital, total profit/loss, profit/loss by stock etc)
 </td></tr>
 </table>
 <!-- spacer -->
+<br>
+<table>
+<tr><th><b>Custom Radio Inputs</b></th></tr>
+<tr><td>
+The project has been deployed with standard/default radio inputs, however these will have customised styling in a future update.
+</td></tr>
+</table>
 
 [Back to Features](#features)
 <br>
@@ -426,7 +434,7 @@ In the next update, the application will leverage the aggregation and annotation
 
 </details>
 
-[Back to Top](#fifa-2023-womens-world-cup-quiz)
+[Back to Top](#ticker)
 <br>
 <br>
 <br>
