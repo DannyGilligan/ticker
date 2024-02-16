@@ -413,17 +413,18 @@ A dedicated model will also be created for Brokers, this will cover as many of t
 <table>
 <tr><th><b>Aggregation and Annotation</b></th></tr>
 <tr><td>
-In the next update, the application will leverage the aggregation and annotation functionalities of Django to provide the user with more useful details regarding their portfolioe.g, total capital, total profit/loss, profit/loss by stock etc)
+In the next update, the application will leverage the aggregation and annotation functionalities of Django to provide the user with more useful details regarding their portfolio (e.g, total capital, total profit/loss, profit/loss by stock etc)
 </td></tr>
 </table>
 <!-- spacer -->
 <br>
 <table>
-<tr><th><b>Custom Radio Inputs</b></th></tr>
+<tr><th><b>Admin Panel Upgrade</b></th></tr>
 <tr><td>
-The project has been deployed with standard/default radio inputs, however these will have customised styling in a future update.
+The admin panel in this MVP version offers basic functionality, in the next update, additional features will be added that will allow administrators to search for, filter and navigate the stored data more efficiently.
 </td></tr>
 </table>
+<!-- spacer -->
 
 [Back to Features](#features)
 <br>
