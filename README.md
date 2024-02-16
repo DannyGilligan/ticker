@@ -463,7 +463,7 @@ The colours used throughout the application were chosen with the intention to en
 </td>
 </tr>
 </table>
-
+</details>
 
 <!-- Colour Scheme section ends here -->
 
@@ -506,7 +506,7 @@ The colours used throughout the application were chosen with the intention to en
 
 </table>
 </details>
-<br>
+
 
 <details>
   <summary> <b>Login</b></summary>
@@ -539,7 +539,7 @@ The colours used throughout the application were chosen with the intention to en
 
 </table>
 </details>
-<br>
+
 
 
 <details>
@@ -573,7 +573,7 @@ The colours used throughout the application were chosen with the intention to en
 
 </table>
 </details>
-<br>
+
 
 
 
@@ -608,7 +608,6 @@ The colours used throughout the application were chosen with the intention to en
 
 </table>
 </details>
-<br>
 
 
 
@@ -662,7 +661,7 @@ The colours used throughout the application were chosen with the intention to en
 
 </table>
 </details>
-<br>
+
 
 
 <details>
