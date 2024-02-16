@@ -50,7 +50,6 @@ An overview of the key features that have been implemented for this project is s
   <summary> <b>Customised Logo</b></summary>
 <br>
 <table>
-<!-- <tr><th>Customised Logo</th></tr> -->
 <tr>
 <td>
 <br>
@@ -64,14 +63,14 @@ A custom logo has been designed for Ticker, the logo is simple and clear. It als
 
 </td></tr>
 </table>
-</details>
 <br>
+</details>
+
 <!-- Feature 1 ends -->
 <details>
   <summary> <b>User Login and Registration</b></summary>
 <br>
 <table>
-<!-- <tr><th> <b>User Log In and Registration</b> </th></tr> -->
 <tr><td>
 <br>
 The application offers user registration and log in functionality using Django's allauth package.
@@ -94,15 +93,15 @@ A notification is also displayed to the user alerting them to their log in statu
 
 </td></tr>
 </table>
-</details>
 <br>
+</details>
+
 <!-- spacer -->
 
 <details>
   <summary> <b>Navbar</b></summary>
 <br>
 <table>
-<!-- <tr><th> <b>Site Navbar</b> </th></tr> -->
 <tr><td>
 <br>
 A simple, easy to use Navbar has been implemented for the site, utilising Bootstraps CSS and Javascript components, along with some custom styling.
@@ -114,15 +113,15 @@ A simple, easy to use Navbar has been implemented for the site, utilising Bootst
 
 </td></tr>
 </table>
-</details>
 <br>
+</details>
+
 <!-- spacer -->
 
 <details>
   <summary> <b>Add Trade</b></summary>
 <br>
 <table>
-<!-- <tr><th> <b>Add Trade</b> </th></tr> -->
 <tr><td>
 <br>
 Ticker allows user to add the details of their trades to the database by clicking on the 'Add Trade' button.
@@ -158,8 +157,9 @@ A confirmation will be disaplyed to the user once the details have been successf
 
 </td></tr>
 </table>
-</details>
 <br>
+</details>
+
 <!-- spacer -->
 
 <details>
@@ -189,8 +189,9 @@ All open trades currently available on the user's account will then be displayed
 
 </td></tr>
 </table>  
-</details>
 <br>
+</details>
+
 <!-- spacer -->
 
 <details>
@@ -218,9 +219,10 @@ All closed trades currently available on the user's Ticker account will then be 
 ![Main Button](trades/static/documentation/features_05_view_closed_trades(a).webp)
 
 </td></tr>
-</table>  
+</table> 
+<br> 
 </details>
-<br>
+
 <!-- spacer -->
 
 <details>
@@ -249,9 +251,10 @@ All trades currently available on the user's Ticker account will then be display
 ![Main Button](trades/static/documentation/features_06_view_all_trades(b).webp)
 
 </td></tr>
-</table>  
-</details>
+</table>
 <br>
+</details>
+
 <!-- spacer -->
 
 <details>
@@ -279,11 +282,12 @@ A Bootstrap modal component will then display all stored details related to the 
 ![Main Button](trades/static/documentation/features_07_view_trade_details(b).webp)
 
 </td></tr>
-</table>  
+</table>
+<br> 
 </details>
-<br>
-<!-- spacer -->
 
+<!-- spacer -->
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 <br>
 <table>
 <tr><th> <b>Goals Scored</b> </th></tr>
