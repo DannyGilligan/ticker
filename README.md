@@ -1516,10 +1516,27 @@ The live link to the app is https://ticker-aefd70a6f705.herokuapp.com/
 </td></tr>
 <!-- Spacer -->
 
-
-
 </table>
 <br>
 <br>
 <br>
 </details>
+
+
+[Back to Top](#ticker)
+<br>
+<br>
+<br>
+
+
+## Acknowledgements
+
+I'd like to acknowledge and thank Kieron and Avery on the Student Support team!
+
+I'd also like to thank my mentor Martina Terlevic for the calls during the Django project and the very helpful feedback, suggestions and giving me an extra burst of energy to get the project over the line!
+
+
+[Back to Top](#battleship-rescue)
+<br>
+<br>
+<br>
