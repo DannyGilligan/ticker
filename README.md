@@ -11,7 +11,6 @@
 * [Bugs](#bugs)
 * [Manual Testing](#manual-testing)
 * [Deployment](#deployment)
-* [Technologies Used](#technologies-used)
 * [Credits](#credits)
 * [Acknowledgements](#acknowledgements)
 <br>
