@@ -1112,13 +1112,6 @@ Superuser access to admin panel
 </td>
 <td>:heavy_check_mark:</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td></tr>
 
-
-
-
-
-
-
-
 </table>
 
 [Back to Manual Testing](#manual-testing)
@@ -1127,5 +1120,10 @@ Superuser access to admin panel
 <br>
 
 </details>
+
+[Back to Top](#ticker)
+<br>
+<br>
+<br>
 
 <!-- Manual Testing section ends here -->
