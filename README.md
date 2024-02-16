@@ -885,3 +885,247 @@ An error was returned on the HTML validation for the Edit Trade template, this e
 <br>
 <br>
 
+
+<!---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- MANUAL TESTING SECTION -->
+## Manual Testing  
+
+Several manual tests were performed across different devices, browsers and code validators. The results of which are outlined below.
+<br>
+<details>
+  <summary><b>Manual Testing</b></summary>
+<br>
+<table>
+<tr>
+<th rowspan="2">Scenario</th>
+<th rowspan="2">Test Steps</th>
+<th colspan="3">Result</th></tr>
+<tr><th>Phone</th><th>Tablet</th><th>Laptop</th></tr>
+
+<tr>
+<td>
+Register user account
+</td>
+<td>
+Click on register button
+<br>
+Enter valid username in Django Allauth
+<br>
+Enter valid password in Django Allauth
+<br>
+Confirm valid password in Django Allauth
+<br>
+Use registered details to log in
+</td>
+<td>:heavy_check_mark:</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td></tr>
+
+
+
+<tr>
+<td>
+Return user login
+</td>
+<td>
+Click on Login button
+<br>
+Enter valid username in Django Allauth
+<br>
+Enter valid password in Django Allauth
+<br>
+Proceed to home page successfully
+</td>
+<td>:heavy_check_mark:</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td></tr>
+
+<tr>
+<td>
+Site navigation
+</td>
+<td>
+Use menu button on home screen to add trade
+<br>
+Use menu button on home screen to view home screen
+<br>
+Use menu button on home screen to view open trades
+<br>
+Use menu button on home screen to view closed trades
+<br>
+Use menu button on home screen to view all trades
+<br>
+Use menu button on home screen to log out
+<br>
+Use link on navbar to view home screen
+<br>
+Use link on navbar to view open trades
+<br>
+Use link on navbar to view closed trades
+<br>
+Use link on navbar to view all trades
+<br>
+Use link on navbar to log out
+<br>
+Use hamburger menu link to view home screen
+<br>
+Use hamburger menu link to view open trades
+<br>
+Use hamburger menu link to view closed trades
+<br>
+Use hamburger menu link to view all trades
+<br>
+Use hamburger menu link to logout
+</td>
+<td>:heavy_check_mark:</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td></tr>
+
+<tr>
+<td>
+Add trade
+</td>
+<td>
+Click on 'Add Trade+' button
+<br>
+Add trade template is displayed correctly
+<br>
+Add trade form is displayed correctly
+<br>
+All fields accept user inputs correctly
+<br>
+Form validation behaves as expected
+<br>
+Click on 'Add Trade" button after inputting details
+<br>
+'Trade added successfully' template is displayed correctly
+</td>
+<td>:heavy_check_mark:</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td></tr>
+
+<tr>
+<td>
+View Open Trades
+</td>
+<td>
+Click on 'View Open Trades' button 
+<br>
+Open Trades template is displayed correctly
+<br>
+Only open trades related to the authenticated user are displayed
+<br>
+Responsive Bootstrap table displaying trades behaves as expected
+</td>
+<td>:heavy_check_mark:</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td></tr>
+
+<tr>
+<td>
+View Closed Trades
+</td>
+<td>
+Click on 'View Closed Trades' button 
+<br>
+Closed Trades template is displayed correctly
+<br>
+Only closed trades related to the authenticated user are displayed
+<br>
+Responsive Bootstrap table displaying trades behaves as expected
+</td>
+<td>:heavy_check_mark:</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td></tr>
+
+<tr>
+<td>
+View All Trades
+</td>
+<td>
+Click on 'View All Trades' button 
+<br>
+All Trades template is displayed correctly
+<br>
+Only trades related to the authenticated user are displayed
+<br>
+Responsive Bootstrap table displaying trades behaves as expected
+</td>
+<td>:heavy_check_mark:</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td></tr>
+
+<tr>
+<td>
+View Trade Details
+</td>
+<td>
+Click on 'View' button on selected trade from table row
+<br>
+Responsive Bootstrap modal is displayed correctly
+<br>
+All expanded trade details are displayed correctly with valid data
+<br>
+Close button dismisses modal correcly
+</td>
+<td>:heavy_check_mark:</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td></tr>
+
+<tr>
+<td>
+Edit Trade Details
+</td>
+<td>
+Click on 'Edit' button on selected trade from table row
+<br>
+Edit Trade template is displayed correctly
+<br>
+Navbar active tab is displayed correctly
+<br>
+Edit Trade form is displayed correctly
+<br>
+Edit form is populated with previously entered data
+<br>
+Edit form fields accept user inputs
+<br>
+Cancel button behaves correctly
+<br>
+Save changes button behaves correctly
+<br>
+Trade updated successfully template is displayed successfully
+</td>
+<td>:heavy_check_mark:</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td></tr>
+
+<tr>
+<td>
+Delete Trade
+</td>
+<td>
+Click on 'Delete' button on selected trade from table row
+<br>
+Responsive Bootstrap modal is displayed correctly
+<br>
+'No, cancel' button behaves correctly
+<br>
+'Yes, delete' button behaves correctly
+<br>
+Trade deleted successfully confirmation is displayed successfully
+</td>
+<td>:heavy_check_mark:</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td></tr>
+
+<tr>
+<td>
+Superuser access to admin panel
+</td>
+<td>
+Enter /admin/ to url and access admin panel
+<br>
+Enter superuser credentials
+<br>
+Admin panel is displayed correctly
+<br>
+Individual trades are displayed correctly in human readable format
+</td>
+<td>:heavy_check_mark:</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td></tr>
+
+
+
+
+
+
+
+
+</table>
+
+[Back to Manual Testing](#manual-testing)
+<br>
+<br>
+<br>
+
+</details>
+
+<!-- Manual Testing section ends here -->
