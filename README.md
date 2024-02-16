@@ -297,8 +297,24 @@ The colours used throughout the application were chosen with the intention to en
 </table>
 </details>
 <br>
-</details>
+
+
+<details>
+  <summary><b>Trade Model ERD </b></summary>
 <br>
+<table>
+
+<tr>
+<td align="center">
+
+![erd](trades/static/documentation/model_erd.webp)
+
+</td>
+</tr>
+</details>
+
+
+</details>
 
 [Back to Top](#ticker)
 <br>
