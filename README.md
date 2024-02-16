@@ -289,28 +289,28 @@ A Bootstrap modal component will then display all stored details related to the 
 <!-- spacer -->
 
 <details>
-  <summary> <b>View Trade Details</b></summary>
+  <summary> <b>Edit Trade Details</b></summary>
 <br>
 <table>
 <tr><td>
 <br>
-The user can view the details for a specific trade by clicking on the 'View' button on the relevant row.
+The user can edit/update the details for a specific trade by clicking on the 'Edit' button on the relevant row.
 <br><br>
 </td></tr>
 <tr><td Colspan="2" align="center">
 
-![Main Button](trades/static/documentation/features_07_view_trade_details(a).webp)
+![Main Button](trades/static/documentation/features_08_edit_trade(a).webp)
 
 </td></tr>
 
 <tr><td>
 <br>
-A Bootstrap modal component will then display all stored details related to the trade, this includes fields that are automatically calculated by the custom 'Trade' model in models.py. The calculated fields are highlighted below.
+A form page will then be displayed to the user, allowing them to update any of the non-calculated fields in the model. Once the changes are entered, the user can then click on the 'save changes' button, or 'cancel'.
 <br><br>
 </td></tr>
 <tr><td Colspan="2" align="center">
 
-![Main Button](trades/static/documentation/features_07_view_trade_details(b).webp)
+![Main Button](trades/static/documentation/features_08_edit_trade(b).webp)
 
 </td></tr>
 
@@ -321,7 +321,7 @@ A confirmation will then be displayed to the user, informing them that the updat
 </td></tr>
 <tr><td Colspan="2" align="center">
 
-![Main Button](trades/static/documentation/features_07_view_trade_details(c).webp)
+![Main Button](trades/static/documentation/features_08_edit_trade(c).webp)
 
 </td></tr>
 </table>
