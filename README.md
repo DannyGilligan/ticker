@@ -1429,6 +1429,7 @@ Click on the View button once the deployment process completes to launch app.
 </td>
 </table>
 </details>
+</details>
 
 The live link to the app is https://ticker-aefd70a6f705.herokuapp.com/
 
