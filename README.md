@@ -1,7 +1,7 @@
 # Ticker
 
 ![Ticker Logo](trades/static/documentation/ticker-readme-hero.webp)
-
+<br>
 ## Table of Contents
 
 * [Introduction](#introduction)
@@ -32,6 +32,272 @@ The deployed site can be found [here](https://ticker-aefd70a6f705.herokuapp.com/
 [Back to Top](#ticker)
 <br>
 <br>
+<br>
+
+
+
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- DESIGN SECTION -->
+## Design 
+
+An overview of the key design aspects is included below.
+
+<details>
+  <summary><b>Colour Scheme </b></summary>
+<br>
+The colours used throughout the application were chosen with the intention to enhance accessibility and offer clear presentation of the content displayed to the user, while still maintaining visual interest.
+<br><br>
+<table>
+<tr><th>Colour Scheme</th></tr>
+
+<tr><td align="center">
+
+![color scheme](trades/static/documentation/ticker-color-scheme.webp)
+
+</td>
+</tr>
+</table>
+</details>
+
+<!-- Colour Scheme section ends here -->
+
+
+
+
+<details>
+  <summary><b>Wireframes </b></summary>
+<br>
+
+
+<details>
+  <summary> <b>Registration</b></summary>
+<br>
+<table>
+
+<tr>
+<td align="center">
+
+![wireframe](trades/static/documentation/wireframe_1_registration(1).webp)
+
+</td>
+</tr>
+
+<tr>
+<td align="center">
+
+![wireframe](trades/static/documentation/wireframe_1_registration(2).webp)
+
+</td>
+</tr>
+
+<tr>
+<td align="center">
+
+![wireframe](trades/static/documentation/wireframe_1_registration(3).webp)
+
+</td>
+</tr>
+
+</table>
+</details>
+
+
+<details>
+  <summary> <b>Login</b></summary>
+<br>
+<table>
+
+<tr>
+<td align="center">
+
+![wireframe](trades/static/documentation/wireframe_2_login(1).webp)
+
+</td>
+</tr>
+
+<tr>
+<td align="center">
+
+![wireframe](trades/static/documentation/wireframe_2_login(2).webp)
+
+</td>
+</tr>
+
+<tr>
+<td align="center">
+
+![wireframe](trades/static/documentation/wireframe_2_login(3).webp)
+
+</td>
+</tr>
+
+</table>
+</details>
+
+
+
+<details>
+  <summary> <b>Add Trade</b></summary>
+<br>
+<table>
+
+<tr>
+<td align="center">
+
+![wireframe](trades/static/documentation/wireframe_3_add_trade(1).webp)
+
+</td>
+</tr>
+
+<tr>
+<td align="center">
+
+![wireframe](trades/static/documentation/wireframe_3_add_trade(2).webp)
+
+</td>
+</tr>
+
+<tr>
+<td align="center">
+
+![wireframe](trades/static/documentation/wireframe_3_add_trade(3).webp)
+
+</td>
+</tr>
+
+</table>
+</details>
+
+
+
+
+<details>
+  <summary> <b>View Trade</b></summary>
+<br>
+<table>
+
+<tr>
+<td align="center">
+
+![wireframe](trades/static/documentation/wireframe_4_view_trade(1).webp)
+
+</td>
+</tr>
+
+<tr>
+<td align="center">
+
+![wireframe](trades/static/documentation/wireframe_4_view_trade(2).webp)
+
+</td>
+</tr>
+
+<tr>
+<td align="center">
+
+![wireframe](trades/static/documentation/wireframe_4_view_trade(3).webp)
+
+</td>
+</tr>
+
+</table>
+</details>
+
+
+
+<details>
+  <summary> <b>Edit Trade</b></summary>
+<br>
+<table>
+
+<tr>
+<td align="center">
+
+![wireframe](trades/static/documentation/wireframe_5_edit_trade(1).webp)
+
+</td>
+</tr>
+
+<tr>
+<td align="center">
+
+![wireframe](trades/static/documentation/wireframe_5_edit_trade(2).webp)
+
+</td>
+</tr>
+
+<tr>
+<td align="center">
+
+![wireframe](trades/static/documentation/wireframe_5_edit_trade(3).webp)
+
+</td>
+</tr>
+
+
+<tr>
+<td align="center">
+
+![wireframe](trades/static/documentation/wireframe_5_edit_trade(4).webp)
+
+</td>
+</tr>
+
+
+<tr>
+<td align="center">
+
+![wireframe](trades/static/documentation/wireframe_5_edit_trade(5).webp)
+
+</td>
+</tr>
+
+
+</table>
+</details>
+
+
+
+<details>
+  <summary> <b>Delete Trade</b></summary>
+<br>
+<table>
+
+<tr>
+<td align="center">
+
+![wireframe](trades/static/documentation/wireframe_6_delete_trade(1).webp)
+
+</td>
+</tr>
+
+<tr>
+<td align="center">
+
+![wireframe](trades/static/documentation/wireframe_6_delete_trade(2).webp)
+
+</td>
+</tr>
+
+<tr>
+<td align="center">
+
+![wireframe](trades/static/documentation/wireframe_6_delete_trade(3).webp)
+
+</td>
+</tr>
+
+
+<tr>
+<td align="center">
+
+![wireframe](trades/static/documentation/wireframe_6_delete_trade(4).webp)
+
+</td>
+</tr>
+
+
+</table>
+</details>
 <br>
 
 
@@ -443,266 +709,5 @@ The admin panel in this MVP version offers basic functionality, in the next upda
 <!-- Features ends here -->
 
 
-<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- DESIGN SECTION -->
-## Design 
 
-An overview of the key design aspects is included below.
 
-<details>
-  <summary><b>Colour Scheme </b></summary>
-<br>
-The colours used throughout the application were chosen with the intention to enhance accessibility and offer clear presentation of the content displayed to the user, while still maintaining visual interest.
-<br><br>
-<table>
-<tr><th>Colour Scheme</th></tr>
-
-<tr><td align="center">
-
-![color scheme](trades/static/documentation/ticker-color-scheme.webp)
-
-</td>
-</tr>
-</table>
-</details>
-
-<!-- Colour Scheme section ends here -->
-
-
-
-
-<details>
-  <summary><b>Wireframes </b></summary>
-<br>
-
-
-<details>
-  <summary> <b>Registration</b></summary>
-<br>
-<table>
-
-<tr>
-<td align="center">
-
-![wireframe](trades/static/documentation/wireframe_1_registration(1).webp)
-
-</td>
-</tr>
-
-<tr>
-<td align="center">
-
-![wireframe](trades/static/documentation/wireframe_1_registration(2).webp)
-
-</td>
-</tr>
-
-<tr>
-<td align="center">
-
-![wireframe](trades/static/documentation/wireframe_1_registration(3).webp)
-
-</td>
-</tr>
-
-</table>
-</details>
-
-
-<details>
-  <summary> <b>Login</b></summary>
-<br>
-<table>
-
-<tr>
-<td align="center">
-
-![wireframe](trades/static/documentation/wireframe_2_login(1).webp)
-
-</td>
-</tr>
-
-<tr>
-<td align="center">
-
-![wireframe](trades/static/documentation/wireframe_2_login(2).webp)
-
-</td>
-</tr>
-
-<tr>
-<td align="center">
-
-![wireframe](trades/static/documentation/wireframe_2_login(3).webp)
-
-</td>
-</tr>
-
-</table>
-</details>
-
-
-
-<details>
-  <summary> <b>Add Trade</b></summary>
-<br>
-<table>
-
-<tr>
-<td align="center">
-
-![wireframe](trades/static/documentation/wireframe_3_add_trade(1).webp)
-
-</td>
-</tr>
-
-<tr>
-<td align="center">
-
-![wireframe](trades/static/documentation/wireframe_3_add_trade(2).webp)
-
-</td>
-</tr>
-
-<tr>
-<td align="center">
-
-![wireframe](trades/static/documentation/wireframe_3_add_trade(3).webp)
-
-</td>
-</tr>
-
-</table>
-</details>
-
-
-
-
-<details>
-  <summary> <b>View Trade</b></summary>
-<br>
-<table>
-
-<tr>
-<td align="center">
-
-![wireframe](trades/static/documentation/wireframe_4_view_trade(1).webp)
-
-</td>
-</tr>
-
-<tr>
-<td align="center">
-
-![wireframe](trades/static/documentation/wireframe_4_view_trade(2).webp)
-
-</td>
-</tr>
-
-<tr>
-<td align="center">
-
-![wireframe](trades/static/documentation/wireframe_4_view_trade(3).webp)
-
-</td>
-</tr>
-
-</table>
-</details>
-
-
-
-<details>
-  <summary> <b>Edit Trade</b></summary>
-<br>
-<table>
-
-<tr>
-<td align="center">
-
-![wireframe](trades/static/documentation/wireframe_5_edit_trade(1).webp)
-
-</td>
-</tr>
-
-<tr>
-<td align="center">
-
-![wireframe](trades/static/documentation/wireframe_5_edit_trade(2).webp)
-
-</td>
-</tr>
-
-<tr>
-<td align="center">
-
-![wireframe](trades/static/documentation/wireframe_5_edit_trade(3).webp)
-
-</td>
-</tr>
-
-
-<tr>
-<td align="center">
-
-![wireframe](trades/static/documentation/wireframe_5_edit_trade(4).webp)
-
-</td>
-</tr>
-
-
-<tr>
-<td align="center">
-
-![wireframe](trades/static/documentation/wireframe_5_edit_trade(5).webp)
-
-</td>
-</tr>
-
-
-</table>
-</details>
-
-
-
-<details>
-  <summary> <b>Delete Trade</b></summary>
-<br>
-<table>
-
-<tr>
-<td align="center">
-
-![wireframe](trades/static/documentation/wireframe_6_delete_trade(1).webp)
-
-</td>
-</tr>
-
-<tr>
-<td align="center">
-
-![wireframe](trades/static/documentation/wireframe_6_delete_trade(2).webp)
-
-</td>
-</tr>
-
-<tr>
-<td align="center">
-
-![wireframe](trades/static/documentation/wireframe_6_delete_trade(3).webp)
-
-</td>
-</tr>
-
-
-<tr>
-<td align="center">
-
-![wireframe](trades/static/documentation/wireframe_6_delete_trade(4).webp)
-
-</td>
-</tr>
-
-
-</table>
-</details>
-<br>
