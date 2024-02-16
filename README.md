@@ -807,12 +807,12 @@ The user stories relating to this MVP version of Ticker are outlined below.
 <br>
 
 <details>
-  <summary> Open Trades Template HTML Validation</summary>
+  <summary> Open Trades Template HTML Validation Error</summary>
 <br>
 An error was returned on the HTML validation for the Open Trades template, this error relates to a Bootstrap modal and will be ignored.
 <br><br>
 <table>
-<tr><td><b>Open Trades Template HTML Validation</b></td><td><b>Status</b></td></th></tr>
+<tr><td><b>Open Trades Template HTML Validation Error</b></td><td><b>Status</b></td></th></tr>
 
 <tr><td>
 
@@ -825,12 +825,12 @@ An error was returned on the HTML validation for the Open Trades template, this 
 </details>
 <!-- spacer -->
 <details>
-  <summary>Closed Trades Template HTML Validation</summary>
+  <summary> Closed Trades Template HTML Validation Error</summary>
 <br>
 An error was returned on the HTML validation for the Closed Trades template, this error relates to a Bootstrap modal and will be ignored.
 <br><br>
 <table>
-<tr><td><b>Closed Trades Template HTML Validation</b></td><td><b>Status</b></td></th></tr>
+<tr><td><b>Closed Trades Template HTML Validation Error</b></td><td><b>Status</b></td></th></tr>
 
 <tr><td>
 
@@ -843,12 +843,12 @@ An error was returned on the HTML validation for the Closed Trades template, thi
 </details>
 <!-- spacer -->
 <details>
-  <summary>All Trades Template HTML Validation</summary>
+  <summary> All Trades Template HTML Validation Error</summary>
 <br>
 An error was returned on the HTML validation for the All Trades template, this error relates to a Bootstrap modal and will be ignored.
 <br><br>
 <table>
-<tr><td><b>All Trades Template HTML Validation</b></td><td><b>Status</b></td></th></tr>
+<tr><td><b>All Trades Template HTML Validation Error</b></td><td><b>Status</b></td></th></tr>
 
 <tr><td>
 
@@ -860,12 +860,12 @@ An error was returned on the HTML validation for the All Trades template, this e
 <br>
 </details>
 <details>
-  <summary>Edit Template HTML Validation</summary>
+  <summary> Edit Template HTML Validation Error</summary>
 <br>
 An error was returned on the HTML validation for the Edit Trade template, this error relates to the Django Money package and will be ignored.
 <br><br>
 <table>
-<tr><td><b>Edit Template HTML Validation</b></td><td><b>Status</b></td></th></tr>
+<tr><td><b>Edit Template HTML Validation Error</b></td><td><b>Status</b></td></th></tr>
 
 <tr><td>
 
@@ -880,7 +880,7 @@ An error was returned on the HTML validation for the Edit Trade template, this e
 </details>
 
 
-[Back to Top](#fifa-2023-womens-world-cup-quiz)
+[Back to Top](#ticker)
 <br>
 <br>
 <br>
