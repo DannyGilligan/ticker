@@ -85,7 +85,7 @@ The application offers user registration and log in functionality using Django's
 
 <tr><td>
 <br>
-A notification is also disaplyed to the user alerting them to their log in status.
+A notification is also displayed to the user alerting them to their log in status.
 <br><br>
 </td></tr>
 <tr><td Colspan="2">
