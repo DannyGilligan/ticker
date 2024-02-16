@@ -151,7 +151,9 @@ A confirmation will be disaplyed to the user once the details have been successf
 <table>
 <tr><th> <b>View Open Trades</b> </th></tr>
 <tr><td>
-The user can view all open trades on their Ticker account by clicking on the 'View Open' button.
+<br>
+The user can view all open trades on their Ticker account by clicking on the 'View Open Trades' button.
+<br><br>
 </td></tr>
 <tr><td Colspan="2" align="center">
 
@@ -160,7 +162,9 @@ The user can view all open trades on their Ticker account by clicking on the 'Vi
 </td></tr>
 
 <tr><td>
+<br>
 All open trades currently available on the user's account will then be displayed in tabular form (utilising Bootstraps CSS and Javascript responsive components).
+<br><br>
 </td></tr>
 <tr><td Colspan="2" align="center">
 
@@ -172,25 +176,30 @@ All open trades currently available on the user's account will then be displayed
 <!-- spacer -->
 <br>
 <table>
-<tr><th Colspan="2"> <b>VAR Assist</b> </th></tr>
-<tr><td Colspan="2">
-The VAR Assist feature will allow the user to remove two incorrect choices from the screen. When activated, a function will be invoked that replaces the inner HTML of the incorrect choices with 'Offside!', the radio inputs will also be disabled for these choices. The user will be granted 3 VAR Assists at the start of the quiz, and can use 1 per question until they run out.
+<tr><th> <b>View Closed Trades</b> </th></tr>
+<tr><td>
+<br>
+The user can view all closed trades on their Ticker account by clicking on the 'View Open Trades' button.
+<br><br>
 </td></tr>
-<tr><td> <i>Before Use</i> </td><td> <i>After Use</i> </td></tr>
+<tr><td Colspan="2" align="center">
 
-<tr>
-<td>
+![Main Button](trades/static/documentation/features_05_view_closed_trades(a).webp)
 
-![Before Use](assets/documentation/features07_var_assist_1.webp)
+</td></tr>
 
-</td>
-<td>
+<tr><td>
+<br>
+All closed trades currently available on the user's account will then be displayed in tabular form (utilising Bootstraps CSS and Javascript responsive components).
+<br><br>
+</td></tr>
+<tr><td Colspan="2" align="center">
 
-![After Use](assets/documentation/features07_var_assist_2.webp)
+![Main Button](trades/static/documentation/features_05_view_closed_trades(b).webp)
 
-</td>
-</tr>
+</td></tr>
 </table>  
+
 <!-- spacer -->
 <br>
 <table>
